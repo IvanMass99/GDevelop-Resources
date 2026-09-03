@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDevelop Extensions</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f1115;
+        --card: #1a1f29;
+        --text: #f5f7fa;
+        --muted: #a9b2c0;
+        --primary: #4f8cff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      main {
+        width: min(1100px, 92%);
+        margin: 3rem auto;
+      }
+
+      h1 {
+        margin: 0 0 0.4rem;
+        font-size: clamp(1.4rem, 2.6vw, 2.3rem);
+      }
+
+      .subtitle {
+        margin: 0 0 2rem;
+        color: var(--muted);
+      }
+
+      .status {
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid #2a3140;
+        border-radius: 12px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .meta {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.6rem;
+        margin-top: auto;
+      }
+
+      button,
+      a.btn {
+        border: 0;
+        border-radius: 8px;
+        padding: 0.55rem 0.8rem;
+        background: #263043;
+        color: var(--text);
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+
+      button:hover,
+      a.btn:hover {
+        background: var(--primary);
+      }
+
+      dialog {
+        width: min(540px, 92vw);
+        border: none;
+        border-radius: 12px;
+        background: var(--card);
+        color: var(--text);
+        padding: 1rem 1rem 0.7rem;
+      }
+
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.55);
+      }
+
+      .modal-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .modal-list {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.4rem;
+      }
+
+      .modal-list li {
+        color: var(--muted);
+      }
+
+      .close {
+        background: transparent;
+        border: 1px solid #3a4355;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Extensions Projects</h1>
+      <p class="subtitle">Explora cada proyecto y descarga su carpeta completa.</p>
+      <p class="status" id="status">Cargando proyectos...</p>
+      <section class="grid" id="projects"></section>
+    </main>
+
+    <dialog id="projectModal">
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <button class="close" id="closeModal" type="button">Cerrar</button>
+      </div>
+      <p id="modalDescription" class="meta"></p>
+      <ul class="modal-list" id="modalInfo"></ul>
+    </dialog>
+
+    <script>
+      const owner = "IvanMass99";
+      const repo = "GDevelop-Resources";
+      const statusEl = document.getElementById("status");
+      const projectsEl = document.getElementById("projects");
+      const modal = document.getElementById("projectModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalInfo = document.getElementById("modalInfo");
+
+      document.getElementById("closeModal").addEventListener("click", () => modal.close());
+
+      const api = (path) => `https://api.github.com/repos/${owner}/${repo}${path}`;
+      const raw = (path, branch) => `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}`;
+
+      const getJson = async (url) => {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Error ${response.status}`);
+        return response.json();
+      };
+
+      const findProjectJson = (treePaths, projectDir) => {
+        const preferred = `Extensions/${projectDir}/${projectDir}.json`;
+        if (treePaths.includes(preferred)) return preferred;
+
+        return (
+          treePaths.find(
+            (path) =>
+              path.startsWith(`Extensions/${projectDir}/`) &&
+              path.split("/").length === 3 &&
+              path.endsWith(".json")
+          ) || null
+        );
+      };
+
+      const createModalContent = (project) => {
+        modalTitle.textContent = project.name;
+        modalDescription.textContent = project.description || "Sin descripción";
+
+        modalInfo.innerHTML = "";
+        const rows = [
+          ["Carpeta", project.folder],
+          ["Autor", project.author || "No indicado"],
+          ["Versión", project.version || "No indicada"],
+          ["Archivo", project.jsonPath || "No encontrado"],
+          ["Cantidad de archivos", String(project.fileCount)],
+        ];
+
+        rows.forEach(([label, value]) => {
+          const li = document.createElement("li");
+          li.textContent = `${label}: ${value}`;
+          modalInfo.appendChild(li);
+        });
+      };
+
+      const renderProjectCard = (project, branch) => {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        const title = document.createElement("h2");
+        title.textContent = project.name;
+
+        const meta = document.createElement("p");
+        meta.className = "meta";
+        meta.textContent = project.description || "Sin descripción disponible";
+
+        const actions = document.createElement("div");
+        actions.className = "actions";
+
+        const infoBtn = document.createElement("button");
+        infoBtn.type = "button";
+        infoBtn.textContent = "Ver info";
+        infoBtn.addEventListener("click", () => {
+          createModalContent(project);
+          modal.showModal();
+        });
+
+        const download = document.createElement("a");
+        download.className = "btn";
+        download.target = "_blank";
+        download.rel = "noopener noreferrer";
+        download.textContent = "Descargar carpeta";
+        const treeUrl = `https://github.com/${owner}/${repo}/tree/${branch}/Extensions/${project.folder}`;
+        download.href = `https://download-directory.github.io/?url=${encodeURIComponent(treeUrl)}`;
+
+        actions.append(infoBtn, download);
+        card.append(title, meta, actions);
+        projectsEl.appendChild(card);
+      };
+
+      const loadProjects = async () => {
+        try {
+          const repoInfo = await getJson(api(""));
+          const branch = repoInfo.default_branch;
+
+          const extensionsEntries = await getJson(api(`/contents/Extensions?ref=${branch}`));
+          const projectDirs = extensionsEntries.filter((entry) => entry.type === "dir").map((entry) => entry.name);
+
+          const fullTree = await getJson(api(`/git/trees/${branch}?recursive=1`));
+          const filePaths = (fullTree.tree || [])
+            .filter((entry) => entry.type === "blob")
+            .map((entry) => entry.path);
+
+          const projects = await Promise.all(
+            projectDirs.map(async (folder) => {
+              const projectFiles = filePaths.filter((path) => path.startsWith(`Extensions/${folder}/`));
+              const jsonPath = findProjectJson(filePaths, folder);
+              let details = {};
+
+              if (jsonPath) {
+                try {
+                  const json = await getJson(raw(jsonPath, branch));
+                  const props = json.properties || {};
+                  details = {
+                    name: props.name || folder,
+                    description: props.description || "",
+                    author: props.author || "",
+                    version: props.version || "",
+                  };
+                } catch {
+                  details = { name: folder, description: "", author: "", version: "" };
+                }
+              }
+
+              return {
+                folder,
+                name: details.name || folder,
+                description: details.description || "",
+                author: details.author || "",
+                version: details.version || "",
+                jsonPath,
+                fileCount: projectFiles.length,
+              };
+            })
+          );
+
+          projectsEl.innerHTML = "";
+
+          if (!projects.length) {
+            statusEl.textContent = "No se encontraron proyectos en Extensions.";
+            return;
+          }
+
+          statusEl.textContent = `Se encontraron ${projects.length} proyecto(s).`;
+          projects.forEach((project) => renderProjectCard(project, branch));
+        } catch (error) {
+          statusEl.textContent = "No fue posible cargar los proyectos.";
+          console.error(error);
+        }
+      };
+
+      loadProjects();
+    </script>
+  </body>
+</html>
