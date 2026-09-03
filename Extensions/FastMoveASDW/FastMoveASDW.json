@@ -20,7 +20,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "FastMoveASDW",
+    "name": "EasyMove2D",
     "description": "Fast move 8 directions with personalize controls",
     "author": "ivandeveloper",
     "windowWidth": 1280,
@@ -78,8 +78,12 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "ThTNbO5CH2PFLjew5p0BhyRJtv72"
+    ],
+    "authorUsernames": [
+      "Ivandeveloper"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -106,6 +110,11 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/easymove2d"
+    }
+  ],
   "externalLayouts": []
 }
