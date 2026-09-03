@@ -21,7 +21,7 @@
     "templateSlug": "",
     "version": "1.0.0",
     "name": "FastMoveASDW",
-    "description": "",
+    "description": "Fast move 8 directions with personalize controls",
     "author": "ivandeveloper",
     "windowWidth": 1280,
     "windowHeight": 720,
