@@ -22,22 +22,10 @@
   "dependencies": [],
   "globalVariables": [
     {
-      "name": "GLOBAL_ALTERNATIVE",
-      "persistentUuid": "85f722ea-9596-4bdb-87b8-3cbbbfe8fec5",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "GLOBAL_SPEED",
       "persistentUuid": "a14dcefb-e0c4-4be2-9503-f50bf4f8e73f",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "GLOBAL_GENRE",
-      "persistentUuid": "e44d61a7-c1b3-4a9f-874d-2a2cccbe1e4e",
-      "type": "string",
-      "value": ""
     },
     {
       "name": "GLOBAL_ACTUAL_KEY",
@@ -46,11 +34,13 @@
       "value": ""
     },
     {
+      "folded": true,
       "name": "BINDING",
       "persistentUuid": "aebd8df2-67b4-4b37-8301-ac76e83ee448",
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "RPG",
           "persistentUuid": "a2c337df-411c-4e79-8299-4b45c3b19d2f",
           "type": "structure",
@@ -1599,7 +1589,6 @@
               "parameters": []
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1901,6 +1890,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2372,7 +2362,61 @@
               "type": "behavior"
             },
             {
-              "description": "",
+              "description": "Key",
+              "name": "MYVAR",
+              "supplementaryInformation": "[\"UP\",\"DOWN\",\"LEFT\",\"RIGHT\"]",
+              "type": "stringWithSelector"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Key release",
+          "functionType": "Condition",
+          "group": "EASY MOVE 2D",
+          "name": "KeyRelease",
+          "sentence": "_PARAM1_ _PARAM0_ If key is released _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "BINDING[Template][MYVAR][Retro]"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            },
+            {
+              "description": "Key",
               "name": "MYVAR",
               "supplementaryInformation": "[\"UP\",\"DOWN\",\"LEFT\",\"RIGHT\"]",
               "type": "stringWithSelector"
@@ -2398,6 +2442,9 @@
               },
               {
                 "functionName": "KeyPress"
+              },
+              {
+                "functionName": "KeyRelease"
               }
             ]
           }
@@ -2434,9 +2481,19 @@
         },
         {
           "value": "",
-          "type": "Boolean",
-          "label": "False = ASWD / True = Arrows",
+          "type": "NumberWithChoices",
+          "label": "0 = AWSD (Standard) and 1  = Arrows (Classic)",
           "group": "Controls",
+          "choices": [
+            {
+              "label": "ASWD",
+              "value": "0"
+            },
+            {
+              "label": "Arrows",
+              "value": "1"
+            }
+          ],
           "advanced": true,
           "name": "Retro"
         },

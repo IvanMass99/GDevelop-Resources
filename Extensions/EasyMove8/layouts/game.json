@@ -1942,9 +1942,10 @@
           "name": "EasyMove2D",
           "type": "EasyMove2D::EasyMove2D",
           "Speed": 200,
-          "Template": "RPG",
+          "Template": "Survivor",
           "Retro Controls": false,
-          "Animations": true
+          "Animations": false,
+          "Retro": 0
         }
       ],
       "animations": [
@@ -2381,6 +2382,60 @@
             "Text",
             "=",
             "LastPressedKey()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "EasyMove2D::EasyMove2D::KeyPress"
+          },
+          "parameters": [
+            "Player",
+            "EasyMove2D",
+            "\"UP\"",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Player",
+            "\"255;15;15\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "EasyMove2D::EasyMove2D::KeyRelease"
+          },
+          "parameters": [
+            "Player",
+            "EasyMove2D",
+            "\"DOWN\"",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Player",
+            "\"107;255;131\""
           ]
         }
       ]
