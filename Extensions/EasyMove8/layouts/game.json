@@ -1945,7 +1945,7 @@
           "Template": "Survivor",
           "Retro Controls": false,
           "Animations": false,
-          "Retro": 0
+          "Retro": 1
         }
       ],
       "animations": [

@@ -9,9 +9,39 @@
   "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LDExaC04VjNjMC0wLjYtMC40LTEtMS0xaC04Yy0wLjYsMC0xLDAuNC0xLDF2OEgzYy0wLjYsMC0xLDAuNC0xLDF2OGMwLDAuNiwwLjQsMSwxLDFoOHY4YzAsMC42LDAuNCwxLDEsMWg4DQoJYzAuNiwwLDEtMC40LDEtMXYtOGg4YzAuNiwwLDEtMC40LDEtMXYtOEMzMCwxMS40LDI5LjYsMTEsMjksMTF6IE04LDE2LjdjMCwwLjQtMC4yLDAuNy0wLjUsMC45Yy0wLjEsMC4xLTAuMywwLjEtMC41LDAuMQ0KCWMtMC4yLDAtMC40LTAuMS0wLjYtMC4ybC0xLTAuN0M1LjIsMTYuNiw1LDE2LjMsNSwxNnMwLjItMC42LDAuNC0wLjhsMS0wLjdjMC4zLTAuMiwwLjctMC4yLDEsMEM3LjgsMTQuNiw4LDE1LDgsMTUuM1YxNi43eg0KCSBNMTcuNSwyNS42bC0wLjcsMUMxNi42LDI2LjgsMTYuMywyNywxNiwyN3MtMC42LTAuMi0wLjgtMC40bC0wLjctMWMtMC4yLTAuMy0wLjItMC43LDAtMVMxNSwyNCwxNS4zLDI0aDEuM2MwLjQsMCwwLjcsMC4yLDAuOSwwLjUNCglTMTcuNywyNS4yLDE3LjUsMjUuNnogTTE3LjUsNy41QzE3LjQsNy44LDE3LDgsMTYuNyw4aC0xLjNjLTAuNCwwLTAuNy0wLjItMC45LTAuNXMtMC4yLTAuNywwLTFsMC43LTFjMC40LTAuNiwxLjMtMC42LDEuNywwbDAuNywxDQoJQzE3LjcsNi44LDE3LjcsNy4xLDE3LjUsNy41eiBNMjYuNiwxNi44bC0xLDAuN2MtMC4yLDAuMS0wLjQsMC4yLTAuNiwwLjJjLTAuMiwwLTAuMywwLTAuNS0wLjFDMjQuMiwxNy40LDI0LDE3LDI0LDE2Ljd2LTEuMw0KCWMwLTAuNCwwLjItMC43LDAuNS0wLjljMC4zLTAuMiwwLjctMC4yLDEsMGwxLDAuN2MwLjMsMC4yLDAuNCwwLjUsMC40LDAuOFMyNi44LDE2LjYsMjYuNiwxNi44eiIvPg0KPC9zdmc+DQo=",
   "name": "EasyMove2D",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Videogames/c240b1c74f1304a51fce326df0582ab741b3475613032c370472ffd61d09e096_Videogames_direction_controller_joystic_navigation_platformer.svg",
-  "shortDescription": "Easy and fast extension to move objects with diferent genres and controllers",
+  "shortDescription": "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
   "version": "0.1.0",
-  "description": "",
+  "description": [
+    "# 2D Movement Templates",
+    "",
+    "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
+    "",
+    "## 🎮 Movement Templates",
+    "",
+    "- **RPG** — Zelda-style 4-direction movement.",
+    "- **Survivors** — Vampire Survivors-style 8-direction movement.",
+    "- **Space Shooter** — Space Invaders-style movement.",
+    "",
+    "## 🎮 Controls",
+    "",
+    "Choose between different control schemes:",
+    "",
+    "- **WASD**",
+    "- **Arrow Keys**",
+    "",
+    "## 🎞️ Automatic Animations",
+    "",
+    "Automatically animate your character based on its movement direction.",
+    "",
+    "When enabled, the extension uses your sprite animations in this order:",
+    "",
+    "- **0 — Down**",
+    "- **1 — Up**",
+    "- **2 — Left**",
+    "- **3 — Right** — automatically mirrored from Left",
+    "",
+    "No need to manually handle directional animations. Just set up your animations in the correct order and let the extension handle the rest."
+  ],
   "tags": [
     "Behaviors",
     "Controller"
@@ -2481,6 +2511,18 @@
         },
         {
           "value": "",
+          "type": "Boolean",
+          "label": "Automatize animations by order (0 - UP, 1 - DOWN, 2 - LEFT & RIGHT)",
+          "group": "Animations",
+          "extraInformation": [
+            "atlas"
+          ],
+          "choices": [],
+          "advanced": true,
+          "name": "Animations"
+        },
+        {
+          "value": "",
           "type": "NumberWithChoices",
           "label": "0 = AWSD (Standard) and 1  = Arrows (Classic)",
           "group": "Controls",
@@ -2496,18 +2538,6 @@
           ],
           "advanced": true,
           "name": "Retro"
-        },
-        {
-          "value": "",
-          "type": "Boolean",
-          "label": "Automatize animations by order (0 - UP, 1 - DOWN, 2 - LEFT & RIGHT)",
-          "group": "Animations",
-          "extraInformation": [
-            "atlas"
-          ],
-          "choices": [],
-          "advanced": true,
-          "name": "Animations"
         }
       ],
       "propertiesFolderStructure": {
