@@ -1,0 +1,586 @@
+{
+  "author": "",
+  "category": "Movement",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LDExaC04VjNjMC0wLjYtMC40LTEtMS0xaC04Yy0wLjYsMC0xLDAuNC0xLDF2OEgzYy0wLjYsMC0xLDAuNC0xLDF2OGMwLDAuNiwwLjQsMSwxLDFoOHY4YzAsMC42LDAuNCwxLDEsMWg4DQoJYzAuNiwwLDEtMC40LDEtMXYtOGg4YzAuNiwwLDEtMC40LDEtMXYtOEMzMCwxMS40LDI5LjYsMTEsMjksMTF6IE04LDE2LjdjMCwwLjQtMC4yLDAuNy0wLjUsMC45Yy0wLjEsMC4xLTAuMywwLjEtMC41LDAuMQ0KCWMtMC4yLDAtMC40LTAuMS0wLjYtMC4ybC0xLTAuN0M1LjIsMTYuNiw1LDE2LjMsNSwxNnMwLjItMC42LDAuNC0wLjhsMS0wLjdjMC4zLTAuMiwwLjctMC4yLDEsMEM3LjgsMTQuNiw4LDE1LDgsMTUuM1YxNi43eg0KCSBNMTcuNSwyNS42bC0wLjcsMUMxNi42LDI2LjgsMTYuMywyNywxNiwyN3MtMC42LTAuMi0wLjgtMC40bC0wLjctMWMtMC4yLTAuMy0wLjItMC43LDAtMVMxNSwyNCwxNS4zLDI0aDEuM2MwLjQsMCwwLjcsMC4yLDAuOSwwLjUNCglTMTcuNywyNS4yLDE3LjUsMjUuNnogTTE3LjUsNy41QzE3LjQsNy44LDE3LDgsMTYuNyw4aC0xLjNjLTAuNCwwLTAuNy0wLjItMC45LTAuNXMtMC4yLTAuNywwLTFsMC43LTFjMC40LTAuNiwxLjMtMC42LDEuNywwbDAuNywxDQoJQzE3LjcsNi44LDE3LjcsNy4xLDE3LjUsNy41eiBNMjYuNiwxNi44bC0xLDAuN2MtMC4yLDAuMS0wLjQsMC4yLTAuNiwwLjJjLTAuMiwwLTAuMywwLTAuNS0wLjFDMjQuMiwxNy40LDI0LDE3LDI0LDE2Ljd2LTEuMw0KCWMwLTAuNCwwLjItMC43LDAuNS0wLjljMC4zLTAuMiwwLjctMC4yLDEsMGwxLDAuN2MwLjMsMC4yLDAuNCwwLjUsMC40LDAuOFMyNi44LDE2LjYsMjYuNiwxNi44eiIvPg0KPC9zdmc+DQo=",
+  "name": "EasyMove2D",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Videogames/c240b1c74f1304a51fce326df0582ab741b3475613032c370472ffd61d09e096_Videogames_direction_controller_joystic_navigation_platformer.svg",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [
+    "ThTNbO5CH2PFLjew5p0BhyRJtv72"
+  ],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "Easy Move 2D",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "EasyMove2D",
+      "objectType": "",
+      "previewIconUrl": "",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onCreated",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "Controllers",
+                    "=",
+                    "\"Keyboard\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"w\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"s\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "Controllers",
+                    "=",
+                    "\"Keyboard + Joystick\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"w\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Up\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Up\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"s\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Down\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Down\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"a\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Left\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"d\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Right\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Right\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "Speed * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Speed",
+          "functionType": "Expression",
+          "group": "Variables",
+          "name": "Speed",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Speed"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "folderName": "Variables",
+            "children": [
+              {
+                "functionName": "Speed"
+              }
+            ]
+          },
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          }
+        ]
+      },
+      "propertyDescriptors": [
+        {
+          "value": "100",
+          "type": "Number",
+          "label": "Speed",
+          "name": "Speed"
+        },
+        {
+          "value": "",
+          "type": "Choice",
+          "label": "",
+          "choices": [
+            {
+              "label": "",
+              "value": "RPG"
+            },
+            {
+              "label": "",
+              "value": "Space Shooter"
+            },
+            {
+              "label": "",
+              "value": "Top-Down"
+            },
+            {
+              "label": "",
+              "value": "Racing"
+            }
+          ],
+          "name": "Genre"
+        },
+        {
+          "value": "",
+          "type": "Choice",
+          "label": "",
+          "choices": [
+            {
+              "label": "",
+              "value": "Keyboard"
+            },
+            {
+              "label": "",
+              "value": "Keyboard + Joystick"
+            }
+          ],
+          "name": "Controllers"
+        }
+      ],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "propertyName": "Controllers"
+          },
+          {
+            "propertyName": "Genre"
+          },
+          {
+            "propertyName": "Speed"
+          }
+        ]
+      }
+    }
+  ],
+  "eventsBasedObjects": [],
+  "requiredExtensions": [
+    {
+      "extensionName": "Gamepads",
+      "extensionVersion": "0.9.2"
+    }
+  ]
+}
