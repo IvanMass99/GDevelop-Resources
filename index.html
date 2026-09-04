@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recursos para GDevelop por IvanMass99</title>
+    <title>GDevelop Resources by IvanMass99</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,31 +41,80 @@
         flex-direction: column;
       }
 
+      .hero {
+        position: relative;
+        width: 100%;
+        min-height: 260px;
+        background-image:
+          linear-gradient(to bottom, rgba(8, 5, 15, 0.82), rgba(8, 5, 15, 0.88)),
+          url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVYRhIrAyFgUkv1AvD6d1gwd6Jceehbvwahh-5Fb0yg&s=10");
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        place-items: center;
+      }
+
+      .hero-content {
+        width: min(1100px, 92%);
+      }
+
+      .hero-title {
+        margin: 0 0 0.9rem;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+      }
+
       main {
         width: min(1100px, 92%);
-        margin: 3rem auto;
+        margin: 2rem auto 3rem;
         flex: 1;
       }
 
-      .banner {
+      .filters {
         margin-bottom: 1.6rem;
-        padding: 1rem;
+        padding: 1rem 1rem 1.15rem;
         background: rgba(139, 92, 246, 0.08);
         border: 1px solid var(--border);
         border-radius: 12px;
       }
 
-      .banner-title {
-        margin: 0 0 0.8rem;
-        font-size: clamp(1.15rem, 2.2vw, 1.7rem);
+      .search-label {
+        display: block;
+        font-size: 0.88rem;
+        color: var(--muted);
+        margin-bottom: 0.45rem;
       }
 
-      .banner-stats {
+      .search-input {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: rgba(7, 5, 13, 0.7);
+        color: var(--text);
+        padding: 0.62rem 0.75rem;
+        font: inherit;
+        margin-bottom: 0.9rem;
+      }
+
+      .search-input::placeholder {
+        color: #9b8fb3;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+
+      .tag-filters {
         display: flex;
         gap: 0.65rem;
         flex-wrap: wrap;
       }
 
+      .filter-pill,
       .stat-pill {
         display: inline-flex;
         align-items: center;
@@ -73,12 +122,28 @@
         border: 1px solid var(--border);
         border-radius: 999px;
         padding: 0.42rem 0.7rem;
-        color: var(--muted);
+        color: var(--text);
         font-size: 0.9rem;
+        background: rgba(9, 7, 16, 0.7);
+      }
+
+      .filter-pill {
+        cursor: pointer;
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+
+      .filter-pill.active {
+        border-color: rgba(139, 92, 246, 0.8);
+        background: rgba(139, 92, 246, 0.2);
+      }
+
+      .star-icon {
+        color: #facc15;
       }
 
       .status {
         color: var(--muted);
+        margin-top: 0;
       }
 
       .grid {
@@ -206,11 +271,29 @@
         background: var(--primary-hover);
       }
 
+      button.filter-pill {
+        border: 1px solid var(--border);
+        padding: 0.42rem 0.7rem;
+        background: rgba(9, 7, 16, 0.7);
+      }
+
+      button.filter-pill:hover {
+        background: rgba(139, 92, 246, 0.2);
+      }
+
       footer {
         width: min(1100px, 92%);
         margin: 0 auto 1.4rem;
         color: var(--muted);
         font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
       }
 
       footer a {
@@ -223,28 +306,47 @@
     </style>
   </head>
   <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">GDevelop Resources</h1>
+      </div>
+    </header>
     <main>
-      <section class="banner">
-        <h1 class="banner-title">Recursos para GDevelop</h1>
-        <div class="banner-stats">
+      <section class="filters">
+        <div class="topbar">
+          <div class="tag-filters" id="tagFilters"></div>
           <span class="stat-pill">
-            <i class="bi bi-star-fill" aria-hidden="true"></i>
-            <span id="starsCount">--</span> estrellas
-          </span>
-          <span class="stat-pill">
-            <i class="bi bi-eye-fill" aria-hidden="true"></i>
-            <span id="visitsCount">--</span> visitas
+            <i class="bi bi-star-fill star-icon" aria-hidden="true"></i>
+            <span id="starsCount">--</span> favorites
           </span>
         </div>
+        <label class="search-label" for="searchInput">Search by project name</label>
+        <input
+          class="search-input"
+          type="search"
+          id="searchInput"
+          placeholder="Type to find projects..."
+          autocomplete="off"
+        />
       </section>
-      <p class="status" id="status">Cargando proyectos...</p>
+      <p class="status" id="status">Loading projects...</p>
       <section class="grid" id="projects"></section>
     </main>
     <footer>
-      <a href="https://github.com/IvanMass99" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github" aria-hidden="true"></i>
-        <span>IvanMass99</span>
-      </a>
+      <div class="footer-links">
+        <a href="https://buymeacoffee.com/ivan.dev1" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-cup-hot-fill" aria-hidden="true"></i>
+          <span>Donate</span>
+        </a>
+        <a href="https://gdevelop.io/download" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-cloud-arrow-down-fill" aria-hidden="true"></i>
+          <span>Download GDevelop</span>
+        </a>
+        <a href="https://editor.gdevelop.io/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-globe2" aria-hidden="true"></i>
+          <span>Use GDevelop in Browser</span>
+        </a>
+      </div>
     </footer>
 
     <script>
@@ -253,7 +355,11 @@
       const statusEl = document.getElementById("status");
       const projectsEl = document.getElementById("projects");
       const starsCountEl = document.getElementById("starsCount");
-      const visitsCountEl = document.getElementById("visitsCount");
+      const tagFiltersEl = document.getElementById("tagFilters");
+      const searchInputEl = document.getElementById("searchInput");
+      let allProjects = [];
+      let activeTag = "all";
+      let currentBranch = "";
 
       const api = (path) => `https://api.github.com/repos/${owner}/${repo}${path}`;
       const raw = (path, branch) => `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}`;
@@ -302,15 +408,6 @@
           .filter(Boolean);
       };
 
-      const getVisitCount = async () => {
-        try {
-          const data = await getJson(`https://api.countapi.xyz/hit/${owner}/${repo}-home`);
-          return typeof data?.value === "number" ? data.value : null;
-        } catch {
-          return null;
-        }
-      };
-
       const findProjectJson = (treePaths, projectDir) => {
         const preferred = `Extensions/${projectDir}/${projectDir}.json`;
         if (treePaths.includes(preferred)) return preferred;
@@ -348,7 +445,7 @@
         if (project.iconUrl || project.iconPath) {
           const logo = document.createElement("img");
           logo.src = project.iconUrl || raw(project.iconPath, branch);
-          logo.alt = `Ícono de ${project.name}`;
+          logo.alt = `${project.name} icon`;
           iconCapsule.appendChild(logo);
         } else {
           iconCapsule.innerHTML = '<i class="bi bi-image" aria-hidden="true"></i>';
@@ -359,16 +456,16 @@
 
         const meta = document.createElement("p");
         meta.className = "meta";
-        meta.textContent = project.description || "Sin descripción disponible";
+        meta.textContent = project.description || "No description available";
 
         const details = document.createElement("ul");
         details.className = "details";
         const detailRows = [
-          ["Autor", project.author || "No indicado"],
-          ["Versión", project.version || "No indicada"],
-          ["Carpeta", project.folder],
-          ["Archivo", project.jsonPath || "No encontrado"],
-          ["Cantidad de archivos", String(project.fileCount)],
+          ["Author", project.author || "Not provided"],
+          ["Version", project.version || "Not provided"],
+          ["Folder", project.folder],
+          ["File", project.jsonPath || "Not found"],
+          ["Files", String(project.fileCount)],
         ];
 
         detailRows.forEach(([label, value]) => {
@@ -399,7 +496,7 @@
         download.className = "btn";
         download.target = "_blank";
         download.rel = "noopener noreferrer";
-        download.innerHTML = '<i class="bi bi-download"></i><span>descargar extensión</span>';
+        download.innerHTML = '<i class="bi bi-download"></i><span>Download extension</span>';
         const treeUrl = `https://github.com/${owner}/${repo}/tree/${branch}/Extensions/${project.folder}`;
         download.href = `https://download-directory.github.io/?url=${encodeURIComponent(treeUrl)}`;
 
@@ -411,13 +508,86 @@
         projectsEl.appendChild(card);
       };
 
+      const buildTagFilters = (projects) => {
+        const tagMap = new Map();
+        projects.forEach((project) => {
+          project.tags.forEach((tag) => {
+            const key = tag.toLowerCase();
+            if (!tagMap.has(key)) tagMap.set(key, tag);
+          });
+        });
+
+        const sortedTags = Array.from(tagMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
+
+        tagFiltersEl.innerHTML = "";
+        const allButton = document.createElement("button");
+        allButton.type = "button";
+        allButton.className = "filter-pill";
+        allButton.textContent = "All tags";
+        allButton.dataset.tag = "all";
+        if (activeTag === "all") allButton.classList.add("active");
+        tagFiltersEl.appendChild(allButton);
+
+        sortedTags.forEach(([key, label]) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "filter-pill";
+          button.textContent = label;
+          button.dataset.tag = key;
+          if (activeTag === key) button.classList.add("active");
+          tagFiltersEl.appendChild(button);
+        });
+      };
+
+      const updateActiveTagButton = () => {
+        tagFiltersEl.querySelectorAll(".filter-pill").forEach((button) => {
+          button.classList.toggle("active", button.dataset.tag === activeTag);
+        });
+      };
+
+      const renderProjects = (branch) => {
+        const searchTerm = searchInputEl.value.trim().toLowerCase();
+        const filteredProjects = allProjects.filter((project) => {
+          const matchesTag =
+            activeTag === "all" || project.tags.some((tag) => tag.toLowerCase() === activeTag);
+          const matchesSearch = project.name.toLowerCase().includes(searchTerm);
+          return matchesTag && matchesSearch;
+        });
+
+        projectsEl.innerHTML = "";
+        filteredProjects.forEach((project) => renderProjectCard(project, branch));
+
+        if (!allProjects.length) {
+          statusEl.textContent = "No valid projects were found.";
+          return;
+        }
+
+        if (!filteredProjects.length) {
+          statusEl.textContent = "No projects match the selected filters.";
+          return;
+        }
+
+        statusEl.textContent = `${filteredProjects.length} project(s) shown.`;
+      };
+
+      tagFiltersEl.addEventListener("click", (event) => {
+        const button = event.target.closest(".filter-pill");
+        if (!button) return;
+        activeTag = button.dataset.tag || "all";
+        updateActiveTagButton();
+        renderProjects(currentBranch);
+      });
+
+      searchInputEl.addEventListener("input", () => {
+        renderProjects(currentBranch);
+      });
+
       const loadProjects = async () => {
         try {
           const repoInfo = await getJson(api(""));
           const branch = repoInfo.default_branch;
-          const visitCount = await getVisitCount();
+          currentBranch = branch;
           starsCountEl.textContent = String(repoInfo.stargazers_count ?? "--");
-          visitsCountEl.textContent = visitCount === null ? "--" : String(visitCount);
 
           const extensionsEntries = await getJson(api(`/contents/Extensions?ref=${branch}`));
           const projectDirs = extensionsEntries.filter((entry) => entry.type === "dir").map((entry) => entry.name);
@@ -468,15 +638,12 @@
 
           projectsEl.innerHTML = "";
 
-          if (!validProjects.length) {
-            statusEl.textContent = "No se encontraron proyectos con la estructura JSON requerida.";
-            return;
-          }
-
-          statusEl.textContent = `Se encontraron ${validProjects.length} proyecto(s) válidos.`;
-          validProjects.forEach((project) => renderProjectCard(project, branch));
+          allProjects = validProjects;
+          buildTagFilters(allProjects);
+          updateActiveTagButton();
+          renderProjects(branch);
         } catch (error) {
-          statusEl.textContent = "No fue posible cargar los proyectos.";
+          statusEl.textContent = "Could not load projects.";
           console.error(error);
         }
       };
