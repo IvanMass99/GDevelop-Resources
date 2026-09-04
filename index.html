@@ -82,6 +82,36 @@
         font-size: 1.1rem;
       }
 
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      .icon-capsule {
+        width: 72px;
+        height: 72px;
+        border-radius: 16px;
+        background: linear-gradient(to bottom, #ffffff, #999999);
+        padding: 6px;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+      }
+
+      .icon-capsule img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.16);
+      }
+
+      .icon-capsule i {
+        font-size: 1.7rem;
+        color: #2b2b2b;
+      }
+
       .meta {
         margin: 0;
         color: var(--muted);
@@ -229,6 +259,16 @@
         );
       };
 
+      const findProjectIcon = (projectFiles, projectDir) => {
+        const iconBasePath = `Extensions/${projectDir}/assets/desktop-icon-512`;
+
+        return (
+          projectFiles.find(
+            (path) => path === iconBasePath || path.startsWith(`${iconBasePath}.`)
+          ) || null
+        );
+      };
+
       const createModalContent = (project) => {
         modalTitle.textContent = project.name;
         modalDescription.textContent = project.description || "Sin descripción";
@@ -252,6 +292,21 @@
       const renderProjectCard = (project, branch) => {
         const card = document.createElement("article");
         card.className = "card";
+
+        const cardHeader = document.createElement("div");
+        cardHeader.className = "card-header";
+
+        const iconCapsule = document.createElement("div");
+        iconCapsule.className = "icon-capsule";
+
+        if (project.iconPath) {
+          const logo = document.createElement("img");
+          logo.src = raw(project.iconPath, branch);
+          logo.alt = `Ícono de ${project.name}`;
+          iconCapsule.appendChild(logo);
+        } else {
+          iconCapsule.innerHTML = '<i class="bi bi-image" aria-hidden="true"></i>';
+        }
 
         const title = document.createElement("h2");
         title.textContent = project.name;
@@ -280,7 +335,8 @@
         download.href = `https://download-directory.github.io/?url=${encodeURIComponent(treeUrl)}`;
 
         actions.append(infoBtn, download);
-        card.append(title, meta, actions);
+        cardHeader.append(iconCapsule, title);
+        card.append(cardHeader, meta, actions);
         projectsEl.appendChild(card);
       };
 
@@ -301,6 +357,7 @@
             projectDirs.map(async (folder) => {
               const projectFiles = filePaths.filter((path) => path.startsWith(`Extensions/${folder}/`));
               const jsonPath = findProjectJson(filePaths, folder);
+              const iconPath = findProjectIcon(projectFiles, folder);
               let details = {};
 
               if (jsonPath) {
@@ -325,6 +382,7 @@
                 author: details.author || "",
                 version: details.version || "",
                 jsonPath,
+                iconPath,
                 fileCount: projectFiles.length,
               };
             })
