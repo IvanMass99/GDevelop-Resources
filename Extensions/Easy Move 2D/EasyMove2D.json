@@ -1,23 +1,43 @@
 {
-  "author": "",
+  "author": "Ivan Dev",
   "category": "Movement",
-  "dimension": "",
+  "dimension": "2D",
   "extensionNamespace": "",
-  "fullName": "",
+  "fullName": "Easy Move 2D",
   "gdevelopVersion": "",
   "helpPath": "",
   "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LDExaC04VjNjMC0wLjYtMC40LTEtMS0xaC04Yy0wLjYsMC0xLDAuNC0xLDF2OEgzYy0wLjYsMC0xLDAuNC0xLDF2OGMwLDAuNiwwLjQsMSwxLDFoOHY4YzAsMC42LDAuNCwxLDEsMWg4DQoJYzAuNiwwLDEtMC40LDEtMXYtOGg4YzAuNiwwLDEtMC40LDEtMXYtOEMzMCwxMS40LDI5LjYsMTEsMjksMTF6IE04LDE2LjdjMCwwLjQtMC4yLDAuNy0wLjUsMC45Yy0wLjEsMC4xLTAuMywwLjEtMC41LDAuMQ0KCWMtMC4yLDAtMC40LTAuMS0wLjYtMC4ybC0xLTAuN0M1LjIsMTYuNiw1LDE2LjMsNSwxNnMwLjItMC42LDAuNC0wLjhsMS0wLjdjMC4zLTAuMiwwLjctMC4yLDEsMEM3LjgsMTQuNiw4LDE1LDgsMTUuM1YxNi43eg0KCSBNMTcuNSwyNS42bC0wLjcsMUMxNi42LDI2LjgsMTYuMywyNywxNiwyN3MtMC42LTAuMi0wLjgtMC40bC0wLjctMWMtMC4yLTAuMy0wLjItMC43LDAtMVMxNSwyNCwxNS4zLDI0aDEuM2MwLjQsMCwwLjcsMC4yLDAuOSwwLjUNCglTMTcuNywyNS4yLDE3LjUsMjUuNnogTTE3LjUsNy41QzE3LjQsNy44LDE3LDgsMTYuNyw4aC0xLjNjLTAuNCwwLTAuNy0wLjItMC45LTAuNXMtMC4yLTAuNywwLTFsMC43LTFjMC40LTAuNiwxLjMtMC42LDEuNywwbDAuNywxDQoJQzE3LjcsNi44LDE3LjcsNy4xLDE3LjUsNy41eiBNMjYuNiwxNi44bC0xLDAuN2MtMC4yLDAuMS0wLjQsMC4yLTAuNiwwLjJjLTAuMiwwLTAuMywwLTAuNS0wLjFDMjQuMiwxNy40LDI0LDE3LDI0LDE2Ljd2LTEuMw0KCWMwLTAuNCwwLjItMC43LDAuNS0wLjljMC4zLTAuMiwwLjctMC4yLDEsMGwxLDAuN2MwLjMsMC4yLDAuNCwwLjUsMC40LDAuOFMyNi44LDE2LjYsMjYuNiwxNi44eiIvPg0KPC9zdmc+DQo=",
   "name": "EasyMove2D",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Videogames/c240b1c74f1304a51fce326df0582ab741b3475613032c370472ffd61d09e096_Videogames_direction_controller_joystic_navigation_platformer.svg",
-  "shortDescription": "",
-  "version": "",
+  "shortDescription": "Easy and fast extension to move objects with diferent genres and controllers",
+  "version": "0.1.0",
   "description": "",
-  "tags": [],
+  "tags": [
+    "Controllers"
+  ],
   "authorIds": [
     "ThTNbO5CH2PFLjew5p0BhyRJtv72"
   ],
   "dependencies": [],
-  "globalVariables": [],
+  "globalVariables": [
+    {
+      "name": "GLOBAL_SPEED",
+      "persistentUuid": "a14dcefb-e0c4-4be2-9503-f50bf4f8e73f",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "GLOBAL_CONTROLLER",
+      "persistentUuid": "1a874fda-8535-46a3-aeaa-86b374f72db1",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "GLOBAL_GENRE",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "sceneVariables": [],
   "eventsFunctions": [],
   "eventsFunctionsFolderStructure": {
@@ -25,41 +45,14 @@
   },
   "eventsBasedBehaviors": [
     {
-      "description": "",
+      "description": "Easy and fast extension to move objects with diferent genres and controllers",
       "fullName": "Easy Move 2D",
       "helpPath": "",
-      "iconUrl": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWN1cnNvci1tb3ZlIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEzLDZWMTFIMThWNy43NUwyMi4yNSwxMkwxOCwxNi4yNVYxM0gxM1YxOEgxNi4yNUwxMiwyMi4yNUw3Ljc1LDE4SDExVjEzSDZWMTYuMjVMMS43NSwxMkw2LDcuNzVWMTFIMTFWNkg3Ljc1TDEyLDEuNzVMMTYuMjUsNkgxM1oiIC8+PC9zdmc+",
       "name": "EasyMove2D",
       "objectType": "",
-      "previewIconUrl": "",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/df1d51e7d6fb4dc46579cc09e67c1c52107c9aa2e2c701b8a9a0ab787afa4527_cursor-move.svg",
       "eventsFunctions": [
-        {
-          "fullName": "",
-          "functionType": "Action",
-          "name": "onCreated",
-          "sentence": "",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ],
-          "parameters": [
-            {
-              "description": "Object",
-              "name": "Object",
-              "type": "object"
-            },
-            {
-              "description": "Behavior",
-              "name": "Behavior",
-              "supplementaryInformation": "EasyMove2D::EasyMove2D",
-              "type": "behavior"
-            }
-          ],
-          "objectGroups": []
-        },
         {
           "fullName": "",
           "functionType": "Action",
@@ -67,6 +60,7 @@
           "sentence": "",
           "events": [
             {
+              "disabled": true,
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -75,7 +69,7 @@
                     "value": "BuiltinCommonInstructions::CompareStrings"
                   },
                   "parameters": [
-                    "Controllers",
+                    "GLOBAL_CONTROLLER",
                     "=",
                     "\"Keyboard\""
                   ]
@@ -104,7 +98,7 @@
                       "parameters": [
                         "Object",
                         "-",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -130,7 +124,7 @@
                       "parameters": [
                         "Object",
                         "+",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -156,7 +150,7 @@
                       "parameters": [
                         "Object",
                         "-",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -182,7 +176,7 @@
                       "parameters": [
                         "Object",
                         "+",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -190,6 +184,7 @@
               ]
             },
             {
+              "disabled": true,
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -198,7 +193,7 @@
                     "value": "BuiltinCommonInstructions::CompareStrings"
                   },
                   "parameters": [
-                    "Controllers",
+                    "GLOBAL_CONTROLLER",
                     "=",
                     "\"Keyboard + Joystick\""
                   ]
@@ -258,7 +253,7 @@
                       "parameters": [
                         "Object",
                         "-",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -315,7 +310,7 @@
                       "parameters": [
                         "Object",
                         "+",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -372,7 +367,7 @@
                       "parameters": [
                         "Object",
                         "-",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
                       ]
                     }
                   ]
@@ -429,7 +424,156 @@
                       "parameters": [
                         "Object",
                         "+",
-                        "Speed * TimeDelta()"
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "GLOBAL_GENRE",
+                    "=",
+                    "\"RPG\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "GLOBAL_CONTROLLER",
+                        "=",
+                        "\"Keyboard\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "AnyKeyPressed"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"w\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetY"
+                          },
+                          "parameters": [
+                            "Object",
+                            "-",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"s\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetY"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"a\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "-",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"d\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -453,10 +597,60 @@
           "objectGroups": []
         },
         {
-          "fullName": "Speed",
-          "functionType": "Expression",
-          "group": "Variables",
-          "name": "Speed",
+          "fullName": "Change speed",
+          "functionType": "Action",
+          "group": "EASY MOVE 2D",
+          "name": "A_ChangeSpeed",
+          "sentence": "_PARAM1_ Change _PARAM0_ speed to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "GLOBAL_SPEED",
+                    "=",
+                    "MYVAR"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            },
+            {
+              "description": "Speed value",
+              "name": "MYVAR",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onCreated",
           "sentence": "",
           "events": [
             {
@@ -465,18 +659,37 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetReturnNumber"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
+                    "GLOBAL_SPEED",
+                    "=",
                     "Speed"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "GLOBAL_CONTROLLER",
+                    "=",
+                    "Controllers"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "GLOBAL_GENRE",
+                    "=",
+                    "Genre"
                   ]
                 }
               ]
             }
           ],
-          "expressionType": {
-            "type": "expression"
-          },
           "parameters": [
             {
               "description": "Object",
@@ -491,30 +704,140 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "fullName": "Change controller type",
+          "functionType": "Action",
+          "group": "EASY MOVE 2D",
+          "name": "B_ChangeController",
+          "sentence": "_PARAM1_ Change _PARAM0_ controls type to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "GLOBAL_CONTROLLER",
+                    "=",
+                    "MYVAR"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            },
+            {
+              "description": "Speed value",
+              "name": "MYVAR",
+              "supplementaryInformation": "[\"Keyboard\",\"Keyboard + Joystick\"]",
+              "type": "stringWithSelector"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Change controller type",
+          "functionType": "Action",
+          "group": "EASY MOVE 2D",
+          "name": "C_ChangeGenre",
+          "sentence": "_PARAM1_ Change _PARAM0_ genre movement template to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "GLOBAL_GENRE",
+                    "=",
+                    "MYVAR"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            },
+            {
+              "description": "Speed value",
+              "name": "MYVAR",
+              "supplementaryInformation": "[\"RPG\",\"dsad\"]",
+              "type": "stringWithSelector"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsFunctionsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "folderName": "Variables",
-            "children": [
-              {
-                "functionName": "Speed"
-              }
-            ]
-          },
-          {
             "functionName": "onCreated"
           },
           {
             "functionName": "doStepPreEvents"
+          },
+          {
+            "folderName": "EASY MOVE 2D",
+            "children": [
+              {
+                "functionName": "A_ChangeSpeed"
+              },
+              {
+                "functionName": "B_ChangeController"
+              },
+              {
+                "functionName": "C_ChangeGenre"
+              }
+            ]
           }
         ]
       },
       "propertyDescriptors": [
         {
-          "value": "100",
+          "value": "1000",
           "type": "Number",
           "label": "Speed",
           "name": "Speed"

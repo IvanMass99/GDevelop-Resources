@@ -59,8 +59,8 @@
         {
           "name": "EasyMove2D",
           "type": "EasyMove2D::EasyMove2D",
-          "Speed": 400,
-          "Genre": "",
+          "Speed": 150,
+          "Genre": "RPG",
           "Controllers": "Keyboard"
         }
       ],
@@ -125,25 +125,7 @@
       }
     ]
   },
-  "events": [
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "EasyMove2D::EasyMove2D::ChangeSpeed"
-          },
-          "parameters": [
-            "NewSprite",
-            "EasyMove2D",
-            "200",
-            ""
-          ]
-        }
-      ]
-    }
-  ],
+  "events": [],
   "layers": [
     {
       "ambientLightColorB": 200,
