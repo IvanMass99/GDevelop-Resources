@@ -9,11 +9,42 @@
   "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LDExaC04VjNjMC0wLjYtMC40LTEtMS0xaC04Yy0wLjYsMC0xLDAuNC0xLDF2OEgzYy0wLjYsMC0xLDAuNC0xLDF2OGMwLDAuNiwwLjQsMSwxLDFoOHY4YzAsMC42LDAuNCwxLDEsMWg4DQoJYzAuNiwwLDEtMC40LDEtMXYtOGg4YzAuNiwwLDEtMC40LDEtMXYtOEMzMCwxMS40LDI5LjYsMTEsMjksMTF6IE04LDE2LjdjMCwwLjQtMC4yLDAuNy0wLjUsMC45Yy0wLjEsMC4xLTAuMywwLjEtMC41LDAuMQ0KCWMtMC4yLDAtMC40LTAuMS0wLjYtMC4ybC0xLTAuN0M1LjIsMTYuNiw1LDE2LjMsNSwxNnMwLjItMC42LDAuNC0wLjhsMS0wLjdjMC4zLTAuMiwwLjctMC4yLDEsMEM3LjgsMTQuNiw4LDE1LDgsMTUuM1YxNi43eg0KCSBNMTcuNSwyNS42bC0wLjcsMUMxNi42LDI2LjgsMTYuMywyNywxNiwyN3MtMC42LTAuMi0wLjgtMC40bC0wLjctMWMtMC4yLTAuMy0wLjItMC43LDAtMVMxNSwyNCwxNS4zLDI0aDEuM2MwLjQsMCwwLjcsMC4yLDAuOSwwLjUNCglTMTcuNywyNS4yLDE3LjUsMjUuNnogTTE3LjUsNy41QzE3LjQsNy44LDE3LDgsMTYuNyw4aC0xLjNjLTAuNCwwLTAuNy0wLjItMC45LTAuNXMtMC4yLTAuNywwLTFsMC43LTFjMC40LTAuNiwxLjMtMC42LDEuNywwbDAuNywxDQoJQzE3LjcsNi44LDE3LjcsNy4xLDE3LjUsNy41eiBNMjYuNiwxNi44bC0xLDAuN2MtMC4yLDAuMS0wLjQsMC4yLTAuNiwwLjJjLTAuMiwwLTAuMywwLTAuNS0wLjFDMjQuMiwxNy40LDI0LDE3LDI0LDE2Ljd2LTEuMw0KCWMwLTAuNCwwLjItMC43LDAuNS0wLjljMC4zLTAuMiwwLjctMC4yLDEsMGwxLDAuN2MwLjMsMC4yLDAuNCwwLjUsMC40LDAuOFMyNi44LDE2LjYsMjYuNiwxNi44eiIvPg0KPC9zdmc+DQo=",
   "name": "EasyMove2D",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Videogames/c240b1c74f1304a51fce326df0582ab741b3475613032c370472ffd61d09e096_Videogames_direction_controller_joystic_navigation_platformer.svg",
-  "shortDescription": "Easy and fast extension to move objects with diferent genres and controllers",
-  "version": "0.1.0",
-  "description": "Easy and fast extension to move objects with diferent genres and controllers",
+  "shortDescription": "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
+  "version": "0.1.1",
+  "description": [
+    "# 2D Movement Templates",
+    "",
+    "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
+    "",
+    "## 🎮 Movement Templates",
+    "",
+    "- **RPG** — Zelda-style 4-direction movement.",
+    "- **Survivors** — Vampire Survivors-style 8-direction movement.",
+    "- **Space Shooter** — Space Invaders-style movement.",
+    "",
+    "## 🎮 Controls",
+    "",
+    "Choose between different control schemes:",
+    "",
+    "- **WASD**",
+    "- **Arrow Keys**",
+    "",
+    "## 🎞️ Automatic Animations",
+    "",
+    "Automatically animate your character based on its movement direction.",
+    "",
+    "When enabled, the extension uses your sprite animations in this order:",
+    "",
+    "- **0 — Down**",
+    "- **1 — Up**",
+    "- **2 — Left**",
+    "- **3 — Right** — automatically mirrored from Left",
+    "",
+    "No need to manually handle directional animations. Just set up your animations in the correct order and let the extension handle the rest."
+  ],
   "tags": [
-    "Controllers"
+    "Behaviors",
+    "Controller"
   ],
   "authorIds": [
     "ThTNbO5CH2PFLjew5p0BhyRJtv72"
@@ -27,15 +58,212 @@
       "value": 0
     },
     {
-      "name": "GLOBAL_CONTROLLER",
-      "persistentUuid": "1a874fda-8535-46a3-aeaa-86b374f72db1",
+      "name": "GLOBAL_ACTUAL_KEY",
+      "persistentUuid": "bdcaae85-ebf8-485f-9ad1-6c33b43b5f6e",
       "type": "string",
       "value": ""
     },
     {
-      "name": "GLOBAL_GENRE",
-      "type": "string",
-      "value": ""
+      "folded": true,
+      "name": "BINDING",
+      "persistentUuid": "aebd8df2-67b4-4b37-8301-ac76e83ee448",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "RPG",
+          "persistentUuid": "a2c337df-411c-4e79-8299-4b45c3b19d2f",
+          "type": "structure",
+          "children": [
+            {
+              "name": "DOWN",
+              "persistentUuid": "51dce2e1-7a00-445b-a0b9-544cad4f7248",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "a52b1cc0-2108-44ca-9a00-84e18e092ec8",
+                  "type": "string",
+                  "value": "s"
+                },
+                {
+                  "persistentUuid": "cc053e36-cd8b-442c-95f0-89b3cb4c4a0b",
+                  "type": "string",
+                  "value": "Down"
+                }
+              ]
+            },
+            {
+              "name": "LEFT",
+              "persistentUuid": "1afed8e7-5b7f-43d0-ac20-a4edf4594636",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "a8432815-536f-46b5-9a2e-93fc9994c8ed",
+                  "type": "string",
+                  "value": "a"
+                },
+                {
+                  "persistentUuid": "b466c431-9136-4265-a7c7-3e1543d0652c",
+                  "type": "string",
+                  "value": "Left"
+                }
+              ]
+            },
+            {
+              "name": "RIGHT",
+              "persistentUuid": "05638835-9af2-4544-b16c-3c443f032b48",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "dacaafb1-8876-4f94-b1f8-ace2d85ed2bc",
+                  "type": "string",
+                  "value": "d"
+                },
+                {
+                  "persistentUuid": "c2c237e3-25b2-4cdd-beab-308c82f368ae",
+                  "type": "string",
+                  "value": "Right"
+                }
+              ]
+            },
+            {
+              "name": "UP",
+              "persistentUuid": "056ccd98-9c78-4bfe-960f-9e41b34d95cd",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "0c4848ed-bca1-4ab6-8a3d-d85eee510cd1",
+                  "type": "string",
+                  "value": "w"
+                },
+                {
+                  "persistentUuid": "6c2f1994-0097-45c9-8e64-7f0a4720b3d5",
+                  "type": "string",
+                  "value": "Up"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Spaceship",
+          "persistentUuid": "03bf9857-255b-4574-a518-ee4ac2fd99ca",
+          "type": "structure",
+          "children": [
+            {
+              "name": "LEFT",
+              "persistentUuid": "25066567-70d7-437f-a9d4-9c5a553b9a1b",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "58d1de6c-be3b-4fdc-81b9-dc4503a60116",
+                  "type": "string",
+                  "value": "a"
+                },
+                {
+                  "persistentUuid": "cf4350b0-0df1-4a61-bc65-de818daa7130",
+                  "type": "string",
+                  "value": "Left"
+                }
+              ]
+            },
+            {
+              "name": "RIGHT",
+              "persistentUuid": "1aacd8c0-78bf-4107-8c5f-7182896c3450",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "a53e634a-688a-435e-8395-cfaaa379a36d",
+                  "type": "string",
+                  "value": "d"
+                },
+                {
+                  "persistentUuid": "2def812f-3f1c-4195-b9d9-40b4b2b5b52b",
+                  "type": "string",
+                  "value": "Right"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Survivor",
+          "persistentUuid": "f8a7e614-6fad-4414-9f01-22e236848e08",
+          "type": "structure",
+          "children": [
+            {
+              "name": "DOWN",
+              "persistentUuid": "b148c895-c4f7-4ec6-9feb-f0e92263c69f",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "22e87d90-d40a-47f9-a162-bb9f289ea906",
+                  "type": "string",
+                  "value": "s"
+                },
+                {
+                  "persistentUuid": "bb196af0-bbf5-43ec-a5b3-0dce477c0eda",
+                  "type": "string",
+                  "value": "Down"
+                }
+              ]
+            },
+            {
+              "name": "LEFT",
+              "persistentUuid": "21c8c87f-46be-4da1-8385-316901410fa1",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "e8d0d3de-fd0f-4763-b730-b9264196150f",
+                  "type": "string",
+                  "value": "a"
+                },
+                {
+                  "persistentUuid": "0ebe8075-e743-44b7-b754-1a5ec6048d04",
+                  "type": "string",
+                  "value": "Left"
+                }
+              ]
+            },
+            {
+              "name": "RIGHT",
+              "persistentUuid": "71eeebe8-df6c-4204-9e79-6986339edb91",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "370372a2-8657-42f8-b21f-009a9f3f92fe",
+                  "type": "string",
+                  "value": "d"
+                },
+                {
+                  "persistentUuid": "c72111f7-0314-4baf-955b-8c056277fe47",
+                  "type": "string",
+                  "value": "Right"
+                }
+              ]
+            },
+            {
+              "name": "UP",
+              "persistentUuid": "10b4e550-cfa3-436c-b8e2-7909a55a81cc",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "3dadda28-bf36-4476-a4ba-67a545a923e4",
+                  "type": "string",
+                  "value": "w"
+                },
+                {
+                  "persistentUuid": "50f5a6c0-631f-49e3-846a-f44ef9a5566b",
+                  "type": "string",
+                  "value": "Up"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "sceneVariables": [],
@@ -45,12 +273,12 @@
   },
   "eventsBasedBehaviors": [
     {
-      "description": "Easy and fast extension to move objects with diferent genres and controllers",
+      "description": "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
       "fullName": "Easy Move 2D",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWN1cnNvci1tb3ZlIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEzLDZWMTFIMThWNy43NUwyMi4yNSwxMkwxOCwxNi4yNVYxM0gxM1YxOEgxNi4yNUwxMiwyMi4yNUw3Ljc1LDE4SDExVjEzSDZWMTYuMjVMMS43NSwxMkw2LDcuNzVWMTFIMTFWNkg3Ljc1TDEyLDEuNzVMMTYuMjUsNkgxM1oiIC8+PC9zdmc+",
       "name": "EasyMove2D",
-      "objectType": "",
+      "objectType": "Sprite",
       "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/df1d51e7d6fb4dc46579cc09e67c1c52107c9aa2e2c701b8a9a0ab787afa4527_cursor-move.svg",
       "eventsFunctions": [
         {
@@ -60,394 +288,19 @@
           "sentence": "",
           "events": [
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "disabled": true,
               "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "GLOBAL_CONTROLLER",
-                    "=",
-                    "\"Keyboard\""
-                  ]
-                }
-              ],
-              "actions": [],
+              "name": "Grouped events",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"w\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetY"
-                      },
-                      "parameters": [
-                        "Object",
-                        "-",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"s\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetY"
-                      },
-                      "parameters": [
-                        "Object",
-                        "+",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"a\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "-",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"d\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "+",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "GLOBAL_CONTROLLER",
-                    "=",
-                    "\"Keyboard + Joystick\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"w\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Up\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Axis_pushed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Left\"",
-                            "\"Up\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetY"
-                      },
-                      "parameters": [
-                        "Object",
-                        "-",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"s\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Down\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Axis_pushed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Left\"",
-                            "\"Down\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetY"
-                      },
-                      "parameters": [
-                        "Object",
-                        "+",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"a\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Left\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Axis_pushed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Left\"",
-                            "\"Left\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "-",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"d\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Right\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Axis_pushed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"Left\"",
-                            "\"Right\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "+",
-                        "GLOBAL_SPEED * TimeDelta()"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "GLOBAL_GENRE",
-                    "=",
-                    "\"RPG\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
+                  "disabled": true,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -468,15 +321,6 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "AnyKeyPressed"
-                          },
-                          "parameters": [
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "KeyFromTextPressed"
                           },
                           "parameters": [
@@ -577,51 +421,1819 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "disabled": true,
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "GLOBAL_CONTROLLER",
+                        "=",
+                        "\"Keyboard + Joystick\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"w\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Button_pressed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Up\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Axis_pushed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Left\"",
+                                "\"Up\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetY"
+                          },
+                          "parameters": [
+                            "Object",
+                            "-",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"s\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Button_pressed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Down\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Axis_pushed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Left\"",
+                                "\"Down\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetY"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Button_pressed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Left\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Axis_pushed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Left\"",
+                                "\"Left\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "-",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"d\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Button_pressed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Right\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Axis_pushed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "\"Left\"",
+                                "\"Right\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "GLOBAL_SPEED * TimeDelta()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "Template",
+                        "=",
+                        "\"Top-Down\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "GLOBAL_CONTROLLER",
+                            "=",
+                            "\"Keyboard\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"w\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetY"
+                              },
+                              "parameters": [
+                                "Object",
+                                "-",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"s\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetY"
+                              },
+                              "parameters": [
+                                "Object",
+                                "+",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "-",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"d\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "+",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "GLOBAL_CONTROLLER",
+                            "=",
+                            "\"Keyboard + Joystick\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"w\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Button_pressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Up\"",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Axis_pushed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Left\"",
+                                    "\"Up\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetY"
+                              },
+                              "parameters": [
+                                "Object",
+                                "-",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"s\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Button_pressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Down\"",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Axis_pushed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Left\"",
+                                    "\"Down\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetY"
+                              },
+                              "parameters": [
+                                "Object",
+                                "+",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"a\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Button_pressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Left\"",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Axis_pushed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Left\"",
+                                    "\"Left\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "-",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"d\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Button_pressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Right\"",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Gamepads::C_Axis_pushed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "1",
+                                    "\"Left\"",
+                                    "\"Right\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "+",
+                                "GLOBAL_SPEED * TimeDelta()"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "Template",
+                        "=",
+                        "\"RPG\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "GLOBAL_CONTROLLER",
+                            "=",
+                            "\"Keyboard\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "GLOBAL_ACTUAL_KEY",
+                                "=",
+                                "LastPressedKey()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "GLOBAL_ACTUAL_KEY"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "GLOBAL_ACTUAL_KEY",
+                                    "=",
+                                    "\"w\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetY"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "GLOBAL_ACTUAL_KEY",
+                                    "=",
+                                    "\"s\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetY"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "+",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "GLOBAL_ACTUAL_KEY",
+                                    "=",
+                                    "\"a\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "GLOBAL_ACTUAL_KEY",
+                                    "=",
+                                    "\"d\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "+",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "GLOBAL_CONTROLLER",
+                            "=",
+                            "\"Keyboard + Joystick\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Keyboard\n"
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "GLOBAL_ACTUAL_KEY",
+                                "=",
+                                "LastPressedKey()"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "folded": true,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GLOBAL_ACTUAL_KEY"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareStrings"
+                                      },
+                                      "parameters": [
+                                        "GLOBAL_ACTUAL_KEY",
+                                        "=",
+                                        "\"w\""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetY"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "-",
+                                        "GLOBAL_SPEED * TimeDelta()"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareStrings"
+                                      },
+                                      "parameters": [
+                                        "GLOBAL_ACTUAL_KEY",
+                                        "=",
+                                        "\"s\""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetY"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "+",
+                                        "GLOBAL_SPEED * TimeDelta()"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareStrings"
+                                      },
+                                      "parameters": [
+                                        "GLOBAL_ACTUAL_KEY",
+                                        "=",
+                                        "\"a\""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetX"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "-",
+                                        "GLOBAL_SPEED * TimeDelta()"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareStrings"
+                                      },
+                                      "parameters": [
+                                        "GLOBAL_ACTUAL_KEY",
+                                        "=",
+                                        "\"d\""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetX"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "+",
+                                        "GLOBAL_SPEED * TimeDelta()"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "D-PAD"
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Gamepads::C_Any_Button_pressed"
+                              },
+                              "parameters": [
+                                "",
+                                "1",
+                                "ACTUAL_JOY"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "ACTUAL_JOY",
+                                "=",
+                                "Gamepads::LastButtonString(1,\"PS4\")"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Or"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareStrings"
+                                      },
+                                      "parameters": [
+                                        "ACTUAL_JOY",
+                                        "=",
+                                        "\"UP\""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetY"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "ACTUAL_JOY",
+                                    "=",
+                                    "\"DOWN\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetY"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "+",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "ACTUAL_JOY",
+                                    "=",
+                                    "\"LEFT\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareStrings"
+                                  },
+                                  "parameters": [
+                                    "ACTUAL_JOY",
+                                    "=",
+                                    "\"RIGHT\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "+",
+                                    "GLOBAL_SPEED * TimeDelta()"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Else",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "ACTUAL_JOY",
+                                "=",
+                                "\"\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "description": "Object",
-              "name": "Object",
-              "type": "object"
+              ],
+              "parameters": []
             },
-            {
-              "description": "Behavior",
-              "name": "Behavior",
-              "supplementaryInformation": "EasyMove2D::EasyMove2D",
-              "type": "behavior"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "fullName": "Change speed",
-          "functionType": "Action",
-          "group": "EASY MOVE 2D",
-          "name": "A_ChangeSpeed",
-          "sentence": "_PARAM1_ Change _PARAM0_ speed to _PARAM2_",
-          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "GLOBAL_SPEED",
+                    "Template",
+                    "!=",
+                    "\"RPG\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].UP[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].DOWN[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].LEFT[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].RIGHT[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Template",
                     "=",
-                    "MYVAR"
+                    "\"RPG\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "GLOBAL_ACTUAL_KEY",
+                        "=",
+                        "LastPressedKey()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "BINDING[Template].UP[Retro]",
+                        "=",
+                        "GLOBAL_ACTUAL_KEY"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].UP[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "BINDING[Template].DOWN[Retro]",
+                        "=",
+                        "GLOBAL_ACTUAL_KEY"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].DOWN[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "BINDING[Template].LEFT[Retro]",
+                        "=",
+                        "GLOBAL_ACTUAL_KEY"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].LEFT[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "BINDING[Template].RIGHT[Retro]",
+                        "=",
+                        "GLOBAL_ACTUAL_KEY"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "BINDING[Template].RIGHT[Retro]"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+",
+                        "GLOBAL_SPEED * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Animations",
+                    "True",
+                    "\"RPG\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "BINDING[Template].UP[Retro]"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyFromTextReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "BINDING[Template].DOWN[Retro]"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyFromTextReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "BINDING[Template].LEFT[Retro]"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyFromTextReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "BINDING[Template].RIGHT[Retro]"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ChangeSprite"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "GLOBAL_ACTUAL_KEY",
+                        "=",
+                        "LastPressedKey()"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "BINDING[Template].UP[Retro]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "BINDING[Template].UP[Retro]",
+                            "=",
+                            "GLOBAL_ACTUAL_KEY"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "BINDING[Template].DOWN[Retro]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "BINDING[Template].DOWN[Retro]",
+                            "=",
+                            "GLOBAL_ACTUAL_KEY"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "BINDING[Template].LEFT[Retro]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "BINDING[Template].LEFT[Retro]",
+                            "=",
+                            "GLOBAL_ACTUAL_KEY"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Flippable",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "BINDING[Template].RIGHT[Retro]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "BINDING[Template].RIGHT[Retro]",
+                            "=",
+                            "GLOBAL_ACTUAL_KEY"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Animation"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Flippable",
+                            "no"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -631,6 +2243,7 @@
             {
               "description": "Object",
               "name": "Object",
+              "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
@@ -638,11 +2251,6 @@
               "name": "Behavior",
               "supplementaryInformation": "EasyMove2D::EasyMove2D",
               "type": "behavior"
-            },
-            {
-              "description": "Speed value",
-              "name": "MYVAR",
-              "type": "expression"
             }
           ],
           "objectGroups": []
@@ -666,26 +2274,6 @@
                     "=",
                     "Speed"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "GLOBAL_CONTROLLER",
-                    "=",
-                    "Controllers"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "GLOBAL_GENRE",
-                    "=",
-                    "Genre"
-                  ]
                 }
               ]
             }
@@ -694,6 +2282,7 @@
             {
               "description": "Object",
               "name": "Object",
+              "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
@@ -706,11 +2295,11 @@
           "objectGroups": []
         },
         {
-          "fullName": "Change controller type",
+          "fullName": "Change speed",
           "functionType": "Action",
           "group": "EASY MOVE 2D",
-          "name": "B_ChangeController",
-          "sentence": "_PARAM1_ Change _PARAM0_ controls type to _PARAM2_",
+          "name": "ChangeSpeed",
+          "sentence": "_PARAM1_ Change the speed of _PARAM0_ to _PARAM2_",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -725,10 +2314,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetStringVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "GLOBAL_CONTROLLER",
+                    "GLOBAL_SPEED",
                     "=",
                     "MYVAR"
                   ]
@@ -740,6 +2329,7 @@
             {
               "description": "Object",
               "name": "Object",
+              "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
@@ -751,38 +2341,92 @@
             {
               "description": "Speed value",
               "name": "MYVAR",
-              "supplementaryInformation": "[\"Keyboard\",\"Keyboard + Joystick\"]",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "Key press",
+          "functionType": "Condition",
+          "group": "EASY MOVE 2D",
+          "name": "KeyPress",
+          "sentence": "_PARAM1_ _PARAM0_ If key press is  _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "BINDING[Template][MYVAR][Retro]"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyMove2D::EasyMove2D",
+              "type": "behavior"
+            },
+            {
+              "description": "Key",
+              "name": "MYVAR",
+              "supplementaryInformation": "[\"UP\",\"DOWN\",\"LEFT\",\"RIGHT\"]",
               "type": "stringWithSelector"
             }
           ],
           "objectGroups": []
         },
         {
-          "fullName": "Change controller type",
-          "functionType": "Action",
+          "fullName": "Key release",
+          "functionType": "Condition",
           "group": "EASY MOVE 2D",
-          "name": "C_ChangeGenre",
-          "sentence": "_PARAM1_ Change _PARAM0_ genre movement template to _PARAM2_",
+          "name": "KeyRelease",
+          "sentence": "_PARAM1_ _PARAM0_ If key is released _PARAM2_",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "KeyFromTextReleased"
                   },
-                  "parameters": []
+                  "parameters": [
+                    "",
+                    "BINDING[Template][MYVAR][Retro]"
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetStringVariable"
+                    "value": "SetReturnBoolean"
                   },
                   "parameters": [
-                    "GLOBAL_GENRE",
-                    "=",
-                    "MYVAR"
+                    "True"
                   ]
                 }
               ]
@@ -792,6 +2436,7 @@
             {
               "description": "Object",
               "name": "Object",
+              "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
@@ -801,9 +2446,9 @@
               "type": "behavior"
             },
             {
-              "description": "Speed value",
+              "description": "Key",
               "name": "MYVAR",
-              "supplementaryInformation": "[\"RPG\",\"dsad\"]",
+              "supplementaryInformation": "[\"UP\",\"DOWN\",\"LEFT\",\"RIGHT\"]",
               "type": "stringWithSelector"
             }
           ],
@@ -823,13 +2468,13 @@
             "folderName": "EASY MOVE 2D",
             "children": [
               {
-                "functionName": "A_ChangeSpeed"
+                "functionName": "ChangeSpeed"
               },
               {
-                "functionName": "B_ChangeController"
+                "functionName": "KeyPress"
               },
               {
-                "functionName": "C_ChangeGenre"
+                "functionName": "KeyRelease"
               }
             ]
           }
@@ -837,73 +2482,97 @@
       },
       "propertyDescriptors": [
         {
-          "value": "1000",
+          "value": "300",
           "type": "Number",
           "label": "Speed",
+          "group": "Stats",
           "name": "Speed"
         },
         {
           "value": "",
           "type": "Choice",
           "label": "",
+          "group": "Controls",
           "choices": [
             {
-              "label": "",
+              "label": "Vampire Survivors style",
+              "value": "Survivor"
+            },
+            {
+              "label": "Zelda style",
               "value": "RPG"
             },
             {
-              "label": "",
-              "value": "Space Shooter"
-            },
-            {
-              "label": "",
-              "value": "Top-Down"
-            },
-            {
-              "label": "",
-              "value": "Racing"
+              "label": "Space invaders style",
+              "value": "Spaceship"
             }
           ],
-          "name": "Genre"
+          "name": "Template"
         },
         {
           "value": "",
-          "type": "Choice",
-          "label": "",
+          "type": "Boolean",
+          "label": "Automatize animations by order (0 - UP, 1 - DOWN, 2 - LEFT & RIGHT)",
+          "group": "Animations",
+          "extraInformation": [
+            "atlas"
+          ],
+          "choices": [],
+          "advanced": true,
+          "name": "Animations"
+        },
+        {
+          "value": "",
+          "type": "NumberWithChoices",
+          "label": "0 = AWSD (Standard) and 1  = Arrows (Classic)",
+          "group": "Controls",
           "choices": [
             {
-              "label": "",
-              "value": "Keyboard"
+              "label": "ASWD",
+              "value": "0"
             },
             {
-              "label": "",
-              "value": "Keyboard + Joystick"
+              "label": "Arrows",
+              "value": "1"
             }
           ],
-          "name": "Controllers"
+          "advanced": true,
+          "name": "Retro"
         }
       ],
       "propertiesFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "propertyName": "Controllers"
+            "folderName": "Controls",
+            "children": [
+              {
+                "propertyName": "Template"
+              },
+              {
+                "propertyName": "Retro"
+              }
+            ]
           },
           {
-            "propertyName": "Genre"
+            "folderName": "Stats",
+            "children": [
+              {
+                "propertyName": "Speed"
+              }
+            ]
           },
           {
-            "propertyName": "Speed"
+            "folderName": "Animations",
+            "children": [
+              {
+                "propertyName": "Animations"
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "eventsBasedObjects": [],
-  "requiredExtensions": [
-    {
-      "extensionName": "Gamepads",
-      "extensionVersion": "0.9.2"
-    }
-  ]
+  "eventsBasedObjects": []
 }
