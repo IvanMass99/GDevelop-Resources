@@ -238,11 +238,41 @@
 
       const api = (path) => `https://api.github.com/repos/${owner}/${repo}${path}`;
       const raw = (path, branch) => `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}`;
+      const requiredProjectJsonKeyOrder = [
+        "author",
+        "category",
+        "dimension",
+        "extensionNamespace",
+        "fullName",
+        "gdevelopVersion",
+        "helpPath",
+        "iconUrl",
+        "name",
+        "previewIconUrl",
+        "shortDescription",
+        "version",
+        "description",
+      ];
 
       const getJson = async (url) => {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Error ${response.status}`);
         return response.json();
+      };
+
+      const hasExpectedProjectSchema = (json) => {
+        if (!json || typeof json !== "object" || Array.isArray(json)) return false;
+        const keys = Object.keys(json);
+
+        return requiredProjectJsonKeyOrder.every((key, index) => keys[index] === key);
+      };
+
+      const normalizeDescription = (description) => {
+        if (Array.isArray(description)) {
+          return description.filter((line) => typeof line === "string" && line.trim()).join(" ").trim();
+        }
+
+        return typeof description === "string" ? description : "";
       };
 
       const findProjectJson = (treePaths, projectDir) => {
@@ -299,9 +329,9 @@
         const iconCapsule = document.createElement("div");
         iconCapsule.className = "icon-capsule";
 
-        if (project.iconPath) {
+        if (project.iconUrl || project.iconPath) {
           const logo = document.createElement("img");
-          logo.src = raw(project.iconPath, branch);
+          logo.src = project.iconUrl || raw(project.iconPath, branch);
           logo.alt = `Ícono de ${project.name}`;
           iconCapsule.appendChild(logo);
         } else {
@@ -358,45 +388,47 @@
               const projectFiles = filePaths.filter((path) => path.startsWith(`Extensions/${folder}/`));
               const jsonPath = findProjectJson(filePaths, folder);
               const iconPath = findProjectIcon(projectFiles, folder);
-              let details = {};
+              if (!jsonPath) return null;
 
-              if (jsonPath) {
-                try {
-                  const json = await getJson(raw(jsonPath, branch));
-                  const props = json.properties || {};
-                  details = {
-                    name: props.name || folder,
-                    description: props.description || "",
-                    author: props.author || "",
-                    version: props.version || "",
-                  };
-                } catch {
-                  details = { name: folder, description: "", author: "", version: "" };
-                }
+              try {
+                const json = await getJson(raw(jsonPath, branch));
+                if (!hasExpectedProjectSchema(json)) return null;
+
+                const name = typeof json.name === "string" ? json.name : "";
+                if (!name.trim()) return null;
+
+                const author = typeof json.author === "string" ? json.author : "";
+                const version = typeof json.version === "string" ? json.version : "";
+                const iconUrl = typeof json.iconUrl === "string" ? json.iconUrl : "";
+                const description = normalizeDescription(json.description);
+
+                return {
+                  folder,
+                  name,
+                  description,
+                  author,
+                  version,
+                  jsonPath,
+                  iconPath,
+                  iconUrl,
+                  fileCount: projectFiles.length,
+                };
+              } catch {
+                return null;
               }
-
-              return {
-                folder,
-                name: details.name || folder,
-                description: details.description || "",
-                author: details.author || "",
-                version: details.version || "",
-                jsonPath,
-                iconPath,
-                fileCount: projectFiles.length,
-              };
             })
           );
+          const validProjects = projects.filter((project) => project !== null);
 
           projectsEl.innerHTML = "";
 
-          if (!projects.length) {
-            statusEl.textContent = "No se encontraron proyectos en Extensions.";
+          if (!validProjects.length) {
+            statusEl.textContent = "No se encontraron proyectos con la estructura JSON requerida.";
             return;
           }
 
-          statusEl.textContent = `Se encontraron ${projects.length} proyecto(s).`;
-          projects.forEach((project) => renderProjectCard(project, branch));
+          statusEl.textContent = `Se encontraron ${validProjects.length} proyecto(s) válidos.`;
+          validProjects.forEach((project) => renderProjectCard(project, branch));
         } catch (error) {
           statusEl.textContent = "No fue posible cargar los proyectos.";
           console.error(error);
