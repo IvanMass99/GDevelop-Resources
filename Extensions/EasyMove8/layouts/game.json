@@ -1,8 +1,8 @@
 {
   "b": 255,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Untitled_32scene",
-  "name": "Untitled scene",
+  "mangledName": "Game",
+  "name": "Game",
   "r": 247,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -34,11 +34,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Player",
-      "persistentUuid": "844d7c10-4c82-449d-a5ba-5f252d746343",
+      "name": "NewSprite",
+      "persistentUuid": "db43091d-6cb7-4d02-86b5-394c11a5e73f",
       "width": 0,
-      "x": 572,
-      "y": 307,
+      "x": 627,
+      "y": 252,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,8 +49,8 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Player",
-      "persistentUuid": "2fd0dc94-8b98-4c44-868d-06bcd1b0ccce",
+      "name": "NewSprite",
+      "persistentUuid": "94a4f8f2-8662-49b3-bf40-717e67cdfd9b",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -59,9 +59,9 @@
         {
           "name": "EasyMove2D",
           "type": "EasyMove2D::EasyMove2D",
-          "Speed": 100,
-          "Movement_template": "Space ship vertical",
-          "ASWD_Controller": "NewSprite"
+          "Speed": 400,
+          "Genre": "",
+          "Controllers": "Keyboard"
         }
       ],
       "animations": [
@@ -76,7 +76,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "NewSprite2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -121,11 +121,29 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Player"
+        "objectName": "NewSprite"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EasyMove2D::EasyMove2D::ChangeSpeed"
+          },
+          "parameters": [
+            "NewSprite",
+            "EasyMove2D",
+            "200",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
