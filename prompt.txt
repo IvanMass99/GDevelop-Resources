@@ -1,0 +1,7 @@
+Quiero que la estructura de la pagina obtenga en relación a 3 carpetas un filtro de archivos. 
+
+Por ejemplo si es una extension, dentro de la carpeta extensión obtenga los datos del json.
+
+En la carpeta project debe buscar en el json que se llama igual que la carpeta de cada proyecto. 
+
+En la carpeta assets que solo muestre en base a un icono de si es un sonido, sprite u otra cosa que se ocurra y en una vista previa se pueda ver la imagen en caso de ser un sprite
