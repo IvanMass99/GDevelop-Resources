@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GDevelop Resources by IvanMass99</title>
+    <title>GDevelop Resources</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,23 +17,24 @@
     <style>
       :root {
         color-scheme: dark;
-        --bg: #09070f;
-        --bg-alt: #130d1f;
+        --bg: rgb(9, 7, 15);
+        --bg-alt: rgb(19, 13, 31);
         --card: #171125;
         --text: #f5f1ff;
         --muted: #b7a9cf;
         --primary: #8b5cf6;
         --primary-hover: #7c3aed;
-        --border: #2f2048;
+        --border: rgb(47, 32, 72);
       }
 
       * {
         box-sizing: border-box;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
       }
 
       body {
         margin: 0;
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+       
         background: linear-gradient(155deg, var(--bg), var(--bg-alt));
         color: var(--text);
         min-height: 100vh;
@@ -45,13 +46,10 @@
         position: relative;
         width: 100%;
         min-height: 260px;
-        background-image:
-          linear-gradient(to bottom, rgba(8, 5, 15, 0.82), rgba(8, 5, 15, 0.88)),
-          url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVYRhIrAyFgUkv1AvD6d1gwd6Jceehbvwahh-5Fb0yg&s=10");
-        background-size: cover;
-        background-position: center;
+        background:linear-gradient(to bottom, rgba(57, 33, 114, 0.82), rgba(9, 7, 15,1));
         display: grid;
         place-items: center;
+    
       }
 
       .hero-content {
@@ -178,7 +176,7 @@
         height: 72px;
         border-radius: 16px;
         background: linear-gradient(to bottom, #ffffff, #999999);
-        padding: 6px;
+        padding: 2px;
         flex-shrink: 0;
         display: grid;
         place-items: center;
@@ -190,6 +188,7 @@
         border-radius: 12px;
         object-fit: contain;
         background: rgba(0, 0, 0, 0.16);
+        padding: 4px;
       }
 
       .icon-capsule i {
@@ -252,6 +251,8 @@
 
       button,
       a.btn {
+        margin-top:10px;
+        margin-bottom:10px;
         border: 0;
         border-radius: 8px;
         padding: 0.55rem 0.8rem;
@@ -283,7 +284,7 @@
 
       footer {
         width: min(1100px, 92%);
-        margin: 0 auto 1.4rem;
+        margin: 0 auto 3rem;
         color: var(--muted);
         font-size: 0.9rem;
         text-align: center;
@@ -309,16 +310,18 @@
     <header class="hero">
       <div class="hero-content">
         <h1 class="hero-title">GDevelop Resources</h1>
+        <h3> A collection of free assets and resources</h3>
+         <span class="stat-pill">
+            <i class="bi bi-github" aria-hidden="true"></i>
+             <i class="bi bi-star-fill star-icon" aria-hidden="true"></i>
+            <span id="starsCount">--</span> 
+          </span>
       </div>
     </header>
     <main>
       <section class="filters">
         <div class="topbar">
           <div class="tag-filters" id="tagFilters"></div>
-          <span class="stat-pill">
-            <i class="bi bi-star-fill star-icon" aria-hidden="true"></i>
-            <span id="starsCount">--</span> favorites
-          </span>
         </div>
         <label class="search-label" for="searchInput">Search by project name</label>
         <input
@@ -333,7 +336,12 @@
       <section class="grid" id="projects"></section>
     </main>
     <footer>
+      
       <div class="footer-links">
+         <a href="https://github.com/IvanMass99/GDevelop-Resources" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github" aria-hidden="true"></i>
+          <span>IvanMass99</span>
+        </a>
         <a href="https://buymeacoffee.com/ivan.dev1" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-cup-hot-fill" aria-hidden="true"></i>
           <span>Donate</span>
@@ -342,10 +350,7 @@
           <i class="bi bi-cloud-arrow-down-fill" aria-hidden="true"></i>
           <span>Download GDevelop</span>
         </a>
-        <a href="https://editor.gdevelop.io/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-globe2" aria-hidden="true"></i>
-          <span>Use GDevelop in Browser</span>
-        </a>
+     
       </div>
     </footer>
 
@@ -463,9 +468,7 @@
         const detailRows = [
           ["Author", project.author || "Not provided"],
           ["Version", project.version || "Not provided"],
-          ["Folder", project.folder],
-          ["File", project.jsonPath || "Not found"],
-          ["Files", String(project.fileCount)],
+
         ];
 
         detailRows.forEach(([label, value]) => {
@@ -496,7 +499,7 @@
         download.className = "btn";
         download.target = "_blank";
         download.rel = "noopener noreferrer";
-        download.innerHTML = '<i class="bi bi-download"></i><span>Download extension</span>';
+        download.innerHTML = '<i class="bi bi-download"></i><span>Download</span>';
         const treeUrl = `https://github.com/${owner}/${repo}/tree/${branch}/Extensions/${project.folder}`;
         download.href = `https://download-directory.github.io/?url=${encodeURIComponent(treeUrl)}`;
 
@@ -614,7 +617,7 @@
                 const author = typeof json.author === "string" ? json.author : "";
                 const version = typeof json.version === "string" ? json.version : "";
                 const iconUrl = typeof json.iconUrl === "string" ? json.iconUrl : "";
-                const description = normalizeDescription(json.description);
+                const description = normalizeDescription(json.shortDescription);
                 const tags = normalizeTags(json.tags);
 
                 return {
