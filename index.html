@@ -47,14 +47,34 @@
         flex: 1;
       }
 
-      h1 {
-        margin: 0 0 0.4rem;
-        font-size: clamp(1.4rem, 2.6vw, 2.3rem);
+      .banner {
+        margin-bottom: 1.6rem;
+        padding: 1rem;
+        background: rgba(139, 92, 246, 0.08);
+        border: 1px solid var(--border);
+        border-radius: 12px;
       }
 
-      .subtitle {
-        margin: 0 0 2rem;
+      .banner-title {
+        margin: 0 0 0.8rem;
+        font-size: clamp(1.15rem, 2.2vw, 1.7rem);
+      }
+
+      .banner-stats {
+        display: flex;
+        gap: 0.65rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.42rem 0.7rem;
         color: var(--muted);
+        font-size: 0.9rem;
       }
 
       .status {
@@ -118,6 +138,47 @@
         font-size: 0.92rem;
       }
 
+      .details {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .details li {
+        color: var(--muted);
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+      }
+
+      .details strong {
+        color: var(--text);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+      }
+
+      .tag {
+        border-radius: 999px;
+        padding: 0.25rem 0.65rem;
+        font-size: 0.8rem;
+        border: 1px solid transparent;
+      }
+
+      .tag-a {
+        background: rgba(139, 92, 246, 0.18);
+        border-color: rgba(139, 92, 246, 0.42);
+      }
+
+      .tag-b {
+        background: rgba(34, 197, 94, 0.16);
+        border-color: rgba(34, 197, 94, 0.38);
+      }
+
       .actions {
         display: flex;
         gap: 0.6rem;
@@ -145,43 +206,6 @@
         background: var(--primary-hover);
       }
 
-      dialog {
-        width: min(540px, 92vw);
-        border: none;
-        border-radius: 12px;
-        background: var(--card);
-        color: var(--text);
-        padding: 1rem 1rem 0.7rem;
-      }
-
-      dialog::backdrop {
-        background: rgba(0, 0, 0, 0.55);
-      }
-
-      .modal-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .modal-list {
-        margin: 1rem 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        gap: 0.4rem;
-      }
-
-      .modal-list li {
-        color: var(--muted);
-      }
-
-      .close {
-        background: transparent;
-        border: 1px solid var(--border);
-      }
-
       footer {
         width: min(1100px, 92%);
         margin: 0 auto 1.4rem;
@@ -200,8 +224,19 @@
   </head>
   <body>
     <main>
-      <h1>Recursos para GDevelop por IvanMass99</h1>
-      <p class="subtitle">Recursos para GDevelop por IvanMass99 en GitHub.</p>
+      <section class="banner">
+        <h1 class="banner-title">Recursos para GDevelop</h1>
+        <div class="banner-stats">
+          <span class="stat-pill">
+            <i class="bi bi-star-fill" aria-hidden="true"></i>
+            <span id="starsCount">--</span> estrellas
+          </span>
+          <span class="stat-pill">
+            <i class="bi bi-eye-fill" aria-hidden="true"></i>
+            <span id="visitsCount">--</span> visitas
+          </span>
+        </div>
+      </section>
       <p class="status" id="status">Cargando proyectos...</p>
       <section class="grid" id="projects"></section>
     </main>
@@ -212,29 +247,13 @@
       </a>
     </footer>
 
-    <dialog id="projectModal">
-      <div class="modal-head">
-        <h2 id="modalTitle"></h2>
-        <button class="close" id="closeModal" type="button">
-          <i class="bi bi-x-circle"></i>
-          <span>Cerrar</span>
-        </button>
-      </div>
-      <p id="modalDescription" class="meta"></p>
-      <ul class="modal-list" id="modalInfo"></ul>
-    </dialog>
-
     <script>
       const owner = "IvanMass99";
       const repo = "GDevelop-Resources";
       const statusEl = document.getElementById("status");
       const projectsEl = document.getElementById("projects");
-      const modal = document.getElementById("projectModal");
-      const modalTitle = document.getElementById("modalTitle");
-      const modalDescription = document.getElementById("modalDescription");
-      const modalInfo = document.getElementById("modalInfo");
-
-      document.getElementById("closeModal").addEventListener("click", () => modal.close());
+      const starsCountEl = document.getElementById("starsCount");
+      const visitsCountEl = document.getElementById("visitsCount");
 
       const api = (path) => `https://api.github.com/repos/${owner}/${repo}${path}`;
       const raw = (path, branch) => `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}`;
@@ -275,6 +294,23 @@
         return typeof description === "string" ? description : "";
       };
 
+      const normalizeTags = (tags) => {
+        if (!Array.isArray(tags)) return [];
+        return tags
+          .filter((tag) => typeof tag === "string")
+          .map((tag) => tag.trim())
+          .filter(Boolean);
+      };
+
+      const getVisitCount = async () => {
+        try {
+          const data = await getJson(`https://api.countapi.xyz/hit/${owner}/${repo}-home`);
+          return typeof data?.value === "number" ? data.value : null;
+        } catch {
+          return null;
+        }
+      };
+
       const findProjectJson = (treePaths, projectDir) => {
         const preferred = `Extensions/${projectDir}/${projectDir}.json`;
         if (treePaths.includes(preferred)) return preferred;
@@ -297,26 +333,6 @@
             (path) => path === iconBasePath || path.startsWith(`${iconBasePath}.`)
           ) || null
         );
-      };
-
-      const createModalContent = (project) => {
-        modalTitle.textContent = project.name;
-        modalDescription.textContent = project.description || "Sin descripción";
-
-        modalInfo.innerHTML = "";
-        const rows = [
-          ["Carpeta", project.folder],
-          ["Autor", project.author || "No indicado"],
-          ["Versión", project.version || "No indicada"],
-          ["Archivo", project.jsonPath || "No encontrado"],
-          ["Cantidad de archivos", String(project.fileCount)],
-        ];
-
-        rows.forEach(([label, value]) => {
-          const li = document.createElement("li");
-          li.textContent = `${label}: ${value}`;
-          modalInfo.appendChild(li);
-        });
       };
 
       const renderProjectCard = (project, branch) => {
@@ -345,16 +361,39 @@
         meta.className = "meta";
         meta.textContent = project.description || "Sin descripción disponible";
 
+        const details = document.createElement("ul");
+        details.className = "details";
+        const detailRows = [
+          ["Autor", project.author || "No indicado"],
+          ["Versión", project.version || "No indicada"],
+          ["Carpeta", project.folder],
+          ["Archivo", project.jsonPath || "No encontrado"],
+          ["Cantidad de archivos", String(project.fileCount)],
+        ];
+
+        detailRows.forEach(([label, value]) => {
+          const li = document.createElement("li");
+          const labelEl = document.createElement("strong");
+          labelEl.textContent = `${label}:`;
+          li.appendChild(labelEl);
+          li.append(` ${value}`);
+          details.appendChild(li);
+        });
+
+        let tagsEl = null;
+        if (project.tags.length) {
+          tagsEl = document.createElement("div");
+          tagsEl.className = "tags";
+          project.tags.forEach((tag, index) => {
+            const bubble = document.createElement("span");
+            bubble.className = `tag ${index % 2 === 0 ? "tag-a" : "tag-b"}`;
+            bubble.textContent = tag;
+            tagsEl.appendChild(bubble);
+          });
+        }
+
         const actions = document.createElement("div");
         actions.className = "actions";
-
-        const infoBtn = document.createElement("button");
-        infoBtn.type = "button";
-        infoBtn.innerHTML = '<i class="bi bi-info-circle"></i><span>Ver info</span>';
-        infoBtn.addEventListener("click", () => {
-          createModalContent(project);
-          modal.showModal();
-        });
 
         const download = document.createElement("a");
         download.className = "btn";
@@ -364,9 +403,11 @@
         const treeUrl = `https://github.com/${owner}/${repo}/tree/${branch}/Extensions/${project.folder}`;
         download.href = `https://download-directory.github.io/?url=${encodeURIComponent(treeUrl)}`;
 
-        actions.append(infoBtn, download);
+        actions.append(download);
         cardHeader.append(iconCapsule, title);
-        card.append(cardHeader, meta, actions);
+        card.append(cardHeader, meta, details);
+        if (tagsEl) card.appendChild(tagsEl);
+        card.append(actions);
         projectsEl.appendChild(card);
       };
 
@@ -374,6 +415,9 @@
         try {
           const repoInfo = await getJson(api(""));
           const branch = repoInfo.default_branch;
+          const visitCount = await getVisitCount();
+          starsCountEl.textContent = String(repoInfo.stargazers_count ?? "--");
+          visitsCountEl.textContent = visitCount === null ? "--" : String(visitCount);
 
           const extensionsEntries = await getJson(api(`/contents/Extensions?ref=${branch}`));
           const projectDirs = extensionsEntries.filter((entry) => entry.type === "dir").map((entry) => entry.name);
@@ -401,6 +445,7 @@
                 const version = typeof json.version === "string" ? json.version : "";
                 const iconUrl = typeof json.iconUrl === "string" ? json.iconUrl : "";
                 const description = normalizeDescription(json.description);
+                const tags = normalizeTags(json.tags);
 
                 return {
                   folder,
@@ -411,6 +456,7 @@
                   jsonPath,
                   iconPath,
                   iconUrl,
+                  tags,
                   fileCount: projectFiles.length,
                 };
               } catch {
