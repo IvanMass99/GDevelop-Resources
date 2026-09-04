@@ -10,7 +10,7 @@
   "name": "EasyMove2D",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Videogames/c240b1c74f1304a51fce326df0582ab741b3475613032c370472ffd61d09e096_Videogames_direction_controller_joystic_navigation_platformer.svg",
   "shortDescription": "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": [
     "# 2D Movement Templates",
     "",
@@ -273,7 +273,7 @@
   },
   "eventsBasedBehaviors": [
     {
-      "description": "Easy and fast extension to move objects with diferent genres and controllers",
+      "description": "Easy and fast extension to move your objects with ready-to-use movement templates inspired by popular game genres.",
       "fullName": "Easy Move 2D",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWN1cnNvci1tb3ZlIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEzLDZWMTFIMThWNy43NUwyMi4yNSwxMkwxOCwxNi4yNVYxM0gxM1YxOEgxNi4yNUwxMiwyMi4yNUw3Ljc1LDE4SDExVjEzSDZWMTYuMjVMMS43NSwxMkw2LDcuNzVWMTFIMTFWNkg3Ljc1TDEyLDEuNzVMMTYuMjUsNkgxM1oiIC8+PC9zdmc+",
