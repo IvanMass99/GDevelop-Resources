@@ -87,21 +87,21 @@
             },
             {
               "label": "2 Directions ⬅➡",
-              "value": "Space ship vertical"
+              "value": "Space Invaders"
             },
             {
               "label": "2 Directions ⬆⬇",
               "value": "Space ship horizontal"
             }
           ],
-          "name": "Movement_templay"
+          "name": "Movement_template"
         }
       ],
       "propertiesFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "propertyName": "Movement_templay"
+            "propertyName": "Movement_template"
           },
           {
             "propertyName": "Speed"
