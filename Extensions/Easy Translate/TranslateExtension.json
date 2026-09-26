@@ -87,6 +87,105 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel flags/Europe/27049fc028aeb20dc9536c1ed034c32a258a0929185b4000a6b6650d8a766348_Spain.png",
           "name": "Spain.png"
         }
+      },
+      {
+        "file": "es.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "es.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "eu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "eu.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "in.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "in.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "fr.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fr.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "gr.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gr.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "gb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gb.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "de.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "de.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "it.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "it.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Silkscreen-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite.png\"}",
+        "name": "NewTiledSprite",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -108,7 +207,7 @@
       "title": "",
       "v": 249,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -118,7 +217,7 @@
         "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
+        "snap": true,
         "zoomFactor": 0.546875,
         "windowMask": false,
         "selectedLayer": "",
@@ -129,16 +228,16 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 102,
           "layer": "",
-          "name": "Titulo",
+          "name": "Title",
           "persistentUuid": "1e0434b0-59e6-481e-8b5b-f8b300bfb9e6",
-          "width": 0,
-          "x": 80,
-          "y": 18,
-          "zOrder": 2,
+          "width": 1280,
+          "x": 0,
+          "y": 215,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -149,27 +248,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Descripcion",
-          "persistentUuid": "abb3821f-d5cf-4a51-89b8-a705be407052",
+          "name": "Flags",
+          "persistentUuid": "5baa7972-c5a1-4bf7-a2b4-a5fc49ccaa66",
           "width": 0,
-          "x": 112,
-          "y": 217,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "USA",
-          "persistentUuid": "be11966d-4ee4-4e5c-984f-e77c66004cce",
-          "width": 0,
-          "x": 1091,
-          "y": 548,
+          "x": 70,
+          "y": 64,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -177,16 +260,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
           "layer": "",
-          "name": "Spain",
-          "persistentUuid": "0d040277-0273-4c1a-ab23-595f335d119d",
-          "width": 0,
-          "x": 959,
-          "y": 547,
-          "zOrder": 5,
+          "name": "Background",
+          "persistentUuid": "825fd38e-5ad5-4c58-a42c-2233dde02144",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -197,7 +280,7 @@
           "assetStoreId": "",
           "bold": true,
           "italic": false,
-          "name": "Titulo",
+          "name": "Title",
           "persistentUuid": "d8391b61-a317-4d34-97ba-67bb53a1a170",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -219,59 +302,8 @@
             }
           ],
           "string": "Text",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 128,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": true,
-            "isOutlineEnabled": true,
-            "isShadowEnabled": true,
-            "italic": false,
-            "outlineColor": "0;0;0",
-            "outlineThickness": 16,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Text",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 128,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": false,
-          "name": "Descripcion",
-          "persistentUuid": "11582b03-990c-42d5-a997-d5b9ada732bd",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "EasyTranslate",
-              "type": "EasyTranslate::EasyTranslate",
-              "🤣 english": "Hello",
-              "Spanish": "Mi nombre es Ivan"
-            }
-          ],
-          "string": "Text",
-          "font": "",
-          "textAlignment": "left",
+          "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+          "textAlignment": "center",
           "characterSize": 64,
           "color": {
             "b": 255,
@@ -284,7 +316,7 @@
             "isShadowEnabled": true,
             "italic": false,
             "outlineColor": "0;0;0",
-            "outlineThickness": 16,
+            "outlineThickness": 12,
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
             "shadowColor": "0;0;0",
@@ -293,9 +325,9 @@
             "smoothed": true,
             "underlined": false,
             "text": "Text",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 64,
             "lineHeight": 0,
             "color": "255;255;255"
@@ -303,14 +335,27 @@
         },
         {
           "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "9b1a8d28063b88187a24e3b4675b1373a2852b34dff6cdd2af119470fa490105",
-          "name": "USA",
-          "persistentUuid": "56b7391d-b82a-4cdc-86bd-cb32d60bdacd",
+          "assetStoreId": "",
+          "name": "Flags",
+          "persistentUuid": "4d5828d3-be74-4bb3-9542-dec21ae565ed",
           "preScale": 6,
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 4
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "ButtonFSM",
@@ -325,16 +370,16 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "English",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
-                  "timeBetweenFrames": 0.025,
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "USA.png",
+                      "image": "gb.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -354,16 +399,16 @@
                             "y": 0
                           },
                           {
-                            "x": 16,
+                            "x": 15,
                             "y": 0
                           },
                           {
-                            "x": 16,
-                            "y": 12
+                            "x": 15,
+                            "y": 10
                           },
                           {
                             "x": 0,
-                            "y": 12
+                            "y": 10
                           }
                         ]
                       ]
@@ -371,43 +416,18 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "70a4a3ba65a1725a166c652dfe784e98547c89d5d839f4fdf6833df787c9f024",
-          "name": "Spain",
-          "persistentUuid": "40ce9c18-23d7-442f-99ab-cd4511b49224",
-          "preScale": 6,
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
+            },
             {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
+              "name": "French",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
-                  "timeBetweenFrames": 0.025,
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Spain.png",
+                      "image": "fr.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -427,16 +447,256 @@
                             "y": 0
                           },
                           {
-                            "x": 16,
+                            "x": 15,
                             "y": 0
                           },
                           {
-                            "x": 16,
-                            "y": 12
+                            "x": 15,
+                            "y": 10
                           },
                           {
                             "x": 0,
-                            "y": 12
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "German",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "de.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Italian",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "it.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Japanese",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "jp.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Portuguese",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Spanish",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "es.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 0
+                          },
+                          {
+                            "x": 15,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
                           }
                         ]
                       ]
@@ -449,112 +709,133 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "NewText",
-          "persistentUuid": "93b3098a-c8e5-40f3-b4c3-54d308251ab8",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
+          "height": 32,
+          "name": "Background",
+          "persistentUuid": "dd93951c-82dd-44da-9c34-f40a9d9d06f2",
+          "texture": "NewTiledSprite",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
           "variables": [],
           "effects": [],
-          "behaviors": [],
-          "string": "Text",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Text",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "0;0;0"
-          }
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Titulo"
+            "objectName": "Title"
           },
           {
-            "objectName": "NewText"
+            "objectName": "Background"
           },
           {
-            "objectName": "Spain"
-          },
-          {
-            "objectName": "Descripcion"
-          },
-          {
-            "objectName": "USA"
+            "objectName": "Flags"
           }
         ]
       },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "conditions": [],
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
-              },
-              "parameters": [
-                "USA",
-                "ButtonFSM",
-                ""
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Flags",
+                        "Animation",
+                        "<",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Flags",
+                        "Animation",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Else",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Flags",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
               ]
-            }
-          ],
-          "actions": [
+            },
             {
-              "type": {
-                "value": "EasyTranslate::change_language"
-              },
-              "parameters": [
-                "",
-                "\"English\"",
-                "Titulo",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::YOffset"
+                  },
+                  "parameters": [
+                    "Background",
+                    "+",
+                    "1"
+                  ]
+                }
               ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
-              },
-              "parameters": [
-                "Spain",
-                "ButtonFSM",
-                ""
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
@@ -562,34 +843,8 @@
               },
               "parameters": [
                 "",
-                "\"Español\"",
-                "Titulo",
+                "Flags.Animation::Name()",
                 ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneJustBegins"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "EasyTranslate::change_language"
-              },
-              "parameters": [
-                "",
-                "\"English\"",
-                "Descripcion"
               ]
             }
           ]
@@ -732,7 +987,7 @@
       "dependencies": [],
       "globalVariables": [
         {
-          "name": "languaje",
+          "name": "select_languaje",
           "persistentUuid": "58f9ea67-fe30-4cb8-985d-1e08dc7ae1fd",
           "type": "string",
           "value": "English"
@@ -744,25 +999,18 @@
           "fullName": "Change language",
           "functionType": "Action",
           "name": "change_language",
-          "sentence": "Change languaje of the videogame for _PARAM1_",
+          "sentence": "Change the language of the game to _PARAM1_",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "languaje",
+                    "select_languaje",
                     "=",
                     "language_selected"
                   ]
@@ -774,7 +1022,7 @@
             {
               "description": "",
               "name": "language_selected",
-              "supplementaryInformation": "[\"English\",\"Español\",\"Italiano\"]",
+              "supplementaryInformation": "[\"English\",\"French\",\"German\",\"Italian\",\"Japanese\",\"Portuguese\",\"Spanish\",\"Other\"]",
               "type": "stringWithSelector"
             }
           ],
@@ -813,9 +1061,177 @@
                         "value": "StringVariable"
                       },
                       "parameters": [
-                        "languaje",
+                        "select_languaje",
                         "=",
-                        "\"Español\""
+                        "\"English\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "English"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"French\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "French"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"German\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "German"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"Italian\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "Italian"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"Japanese\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "Japanese"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"Portuguese\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Text",
+                        "=",
+                        "Portuguese"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "select_languaje",
+                        "=",
+                        "\"Spanish\""
                       ]
                     }
                   ],
@@ -841,9 +1257,9 @@
                         "value": "StringVariable"
                       },
                       "parameters": [
-                        "languaje",
+                        "select_languaje",
                         "=",
-                        "\"English\""
+                        "\"Other\""
                       ]
                     }
                   ],
@@ -856,7 +1272,7 @@
                         "Object",
                         "Text",
                         "=",
-                        "English"
+                        "Other"
                       ]
                     }
                   ]
