@@ -1,0 +1,256 @@
+{
+  "author": "",
+  "category": "General",
+  "dimension": "2D/3D",
+  "extensionNamespace": "",
+  "fullName": "Easy Translate",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMTAsMTFjMC40LTAuNiwwLjgtMS4yLDAuOS0ySDkuMUM5LjIsOS43LDkuNiwxMC40LDEwLDExeiIvPg0KCTxwYXRoIGQ9Ik0xOSwxOFYyYzAtMC42LTAuNC0xLTEtMUgyQzEuNCwxLDEsMS40LDEsMnYxNmMwLDAuNiwwLjQsMSwxLDFoMTZDMTguNiwxOSwxOSwxOC42LDE5LDE4eiBNMTQsMTNjMC42LDAsMSwwLjQsMSwxDQoJCXMtMC40LDEtMSwxYy0xLjUsMC0yLjktMC41LTQtMS4zQzguOSwxNC41LDcuNSwxNSw2LDE1Yy0wLjYsMC0xLTAuNC0xLTFzMC40LTEsMS0xYzAuOSwwLDEuOC0wLjMsMi41LTAuN0M3LjgsMTEuNCw3LjMsMTAuMiw3LjEsOQ0KCQlINkM1LjQsOSw1LDguNiw1LDhzMC40LTEsMS0xaDNWNWMwLTAuNiwwLjQtMSwxLTFzMSwwLjQsMSwxdjJoM2MwLjYsMCwxLDAuNCwxLDFzLTAuNCwxLTEsMWgtMS4xYy0wLjIsMS4yLTAuNywyLjQtMS40LDMuMw0KCQlDMTIuMiwxMi43LDEzLjEsMTMsMTQsMTN6Ii8+DQoJPHBvbHlnb24gcG9pbnRzPSIyMC42LDIzIDIzLjQsMjMgMjIsMjAuMiAJIi8+DQoJPHBhdGggZD0iTTMwLDEzaC05djQuOGwwLjEtMC4yYzAuMy0wLjcsMS40LTAuNywxLjgsMGw0LDhjMC4yLDAuNSwwLDEuMS0wLjQsMS4zQzI2LjMsMjcsMjYuMiwyNywyNiwyN2MtMC40LDAtMC43LTAuMi0wLjktMC42DQoJCWwtMC44LTEuNUMyNC4yLDI1LDI0LjEsMjUsMjQsMjVoLTRjLTAuMSwwLTAuMiwwLTAuMy0wLjFsLTAuOCwxLjVjLTAuMiwwLjUtMC44LDAuNy0xLjMsMC40Yy0wLjUtMC4yLTAuNy0wLjgtMC40LTEuM2wyLjUtNQ0KCQljLTAuNSwwLjMtMSwwLjUtMS42LDAuNWgtNXY5YzAsMC42LDAuNCwxLDEsMWgxNmMwLjYsMCwxLTAuNCwxLTFWMTRDMzEsMTMuNCwzMC42LDEzLDMwLDEzeiIvPg0KPC9nPg0KPC9zdmc+DQo=",
+  "name": "EasyTranslate",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Text Editing/d115904b52a6cb4fdecf0f9741fb3756ba459112ab00070f839a118e9a724c2b_Text Editing_special_characters_translate.svg",
+  "shortDescription": "Easily translate Text objects by defining their content for different languages.",
+  "version": "0.1.0",
+  "description": [
+    "Quickly localize your Text objects in GDevelop by defining different text values for each language. Simply add the extension to a Text object and configure the text you want to display for each supported language.",
+    "",
+    "The extension automatically displays the appropriate text based on the selected language, making it easier to manage translations without creating separate events or manually changing the text of each object.",
+    "",
+    "English is used as the default language, and additional languages can be configured as needed.",
+    ""
+  ],
+  "tags": [],
+  "authorIds": [
+    "ThTNbO5CH2PFLjew5p0BhyRJtv72"
+  ],
+  "dependencies": [],
+  "globalVariables": [
+    {
+      "name": "languaje",
+      "persistentUuid": "58f9ea67-fe30-4cb8-985d-1e08dc7ae1fd",
+      "type": "string",
+      "value": "English"
+    }
+  ],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "fullName": "Change language",
+      "functionType": "Action",
+      "name": "change_language",
+      "sentence": "_PARAM2_ Change languaje to _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "languaje",
+                "=",
+                "language_selected"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "language_selected",
+          "supplementaryInformation": "[\"English\",\"Español\",\"Italiano\"]",
+          "type": "stringWithSelector"
+        },
+        {
+          "description": "Text object",
+          "name": "text_object",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectListOrEmptyIfJustDeclared"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "change_language"
+      }
+    ]
+  },
+  "eventsBasedBehaviors": [
+    {
+      "description": "Easily translate Text objects by defining their content for different languages.",
+      "fullName": "Easy Translate",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMTAsMTFjMC40LTAuNiwwLjgtMS4yLDAuOS0ySDkuMUM5LjIsOS43LDkuNiwxMC40LDEwLDExeiIvPg0KCTxwYXRoIGQ9Ik0xOSwxOFYyYzAtMC42LTAuNC0xLTEtMUgyQzEuNCwxLDEsMS40LDEsMnYxNmMwLDAuNiwwLjQsMSwxLDFoMTZDMTguNiwxOSwxOSwxOC42LDE5LDE4eiBNMTQsMTNjMC42LDAsMSwwLjQsMSwxDQoJCXMtMC40LDEtMSwxYy0xLjUsMC0yLjktMC41LTQtMS4zQzguOSwxNC41LDcuNSwxNSw2LDE1Yy0wLjYsMC0xLTAuNC0xLTFzMC40LTEsMS0xYzAuOSwwLDEuOC0wLjMsMi41LTAuN0M3LjgsMTEuNCw3LjMsMTAuMiw3LjEsOQ0KCQlINkM1LjQsOSw1LDguNiw1LDhzMC40LTEsMS0xaDNWNWMwLTAuNiwwLjQtMSwxLTFzMSwwLjQsMSwxdjJoM2MwLjYsMCwxLDAuNCwxLDFzLTAuNCwxLTEsMWgtMS4xYy0wLjIsMS4yLTAuNywyLjQtMS40LDMuMw0KCQlDMTIuMiwxMi43LDEzLjEsMTMsMTQsMTN6Ii8+DQoJPHBvbHlnb24gcG9pbnRzPSIyMC42LDIzIDIzLjQsMjMgMjIsMjAuMiAJIi8+DQoJPHBhdGggZD0iTTMwLDEzaC05djQuOGwwLjEtMC4yYzAuMy0wLjcsMS40LTAuNywxLjgsMGw0LDhjMC4yLDAuNSwwLDEuMS0wLjQsMS4zQzI2LjMsMjcsMjYuMiwyNywyNiwyN2MtMC40LDAtMC43LTAuMi0wLjktMC42DQoJCWwtMC44LTEuNUMyNC4yLDI1LDI0LjEsMjUsMjQsMjVoLTRjLTAuMSwwLTAuMiwwLTAuMy0wLjFsLTAuOCwxLjVjLTAuMiwwLjUtMC44LDAuNy0xLjMsMC40Yy0wLjUtMC4yLTAuNy0wLjgtMC40LTEuM2wyLjUtNQ0KCQljLTAuNSwwLjMtMSwwLjUtMS42LDAuNWgtNXY5YzAsMC42LDAuNCwxLDEsMWgxNmMwLjYsMCwxLTAuNCwxLTFWMTRDMzEsMTMuNCwzMC42LDEzLDMwLDEzeiIvPg0KPC9nPg0KPC9zdmc+DQo=",
+      "name": "EasyTranslate",
+      "objectType": "TextObject::Text",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Text Editing/d115904b52a6cb4fdecf0f9741fb3756ba459112ab00070f839a118e9a724c2b_Text Editing_special_characters_translate.svg",
+      "private": true,
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPostEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "languaje",
+                    "=",
+                    "\"Español\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Text",
+                    "=",
+                    "Español"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "languaje",
+                    "=",
+                    "\"English\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Text",
+                    "=",
+                    "English"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "TextObject::Text",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "EasyTranslate::EasyTranslate",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPostEvents"
+          }
+        ]
+      },
+      "propertyDescriptors": [
+        {
+          "value": "Hola",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "Español"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "English"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "Portugues"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "Italiano"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "French"
+        }
+      ],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "folderName": "🗺 All languages",
+            "children": [
+              {
+                "propertyName": "English"
+              },
+              {
+                "propertyName": "French"
+              },
+              {
+                "propertyName": "Portugues"
+              },
+              {
+                "propertyName": "Italiano"
+              },
+              {
+                "propertyName": "Español"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "eventsBasedObjects": []
+}
