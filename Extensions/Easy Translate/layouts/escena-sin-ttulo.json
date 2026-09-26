@@ -1,0 +1,1326 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Escena_32sin_32t_237tulo",
+  "name": "Escena sin título",
+  "r": 247,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 249,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.7876290101673753,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 102,
+      "layer": "",
+      "name": "Title",
+      "persistentUuid": "1e0434b0-59e6-481e-8b5b-f8b300bfb9e6",
+      "width": 1280,
+      "x": 0,
+      "y": 215,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Flags",
+      "persistentUuid": "5baa7972-c5a1-4bf7-a2b4-a5fc49ccaa66",
+      "width": 0,
+      "x": 32,
+      "y": 56,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 720,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "825fd38e-5ad5-4c58-a42c-2233dde02144",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Gidi",
+      "persistentUuid": "1b878e73-add0-4511-b396-7ed556c54a1f",
+      "width": 128,
+      "x": 576,
+      "y": 416,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 84,
+      "layer": "",
+      "name": "Sentence",
+      "persistentUuid": "931f114f-242d-4c05-b73f-6f11c8e80d74",
+      "width": 1280,
+      "x": 0,
+      "y": 320,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Pointer_Cursor",
+      "persistentUuid": "005be537-48ea-4f4b-b110-a26c9741eed4",
+      "width": 0,
+      "x": 36,
+      "y": 100,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Title",
+      "persistentUuid": "d8391b61-a317-4d34-97ba-67bb53a1a170",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EasyTranslate",
+          "type": "EasyTranslate::EasyTranslate",
+          "Spanish": "Hola",
+          "Portuguese": "Olá",
+          "German": "Hallo",
+          "French": "Bonjour",
+          "Japanese": "こんにちは",
+          "Italian": "Ciao",
+          "English": "Hello",
+          "Other": "Salve"
+        }
+      ],
+      "string": "Text",
+      "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 64,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 12,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 64,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Flags",
+      "persistentUuid": "4d5828d3-be74-4bb3-9542-dec21ae565ed",
+      "preScale": 4,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "DropShadow",
+          "name": "Shadow",
+          "doubleParameters": {
+            "alpha": 0.5,
+            "blur": 2,
+            "distance": 1,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "English",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gb.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "French",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "fr.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "German",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "de.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Italian",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "it.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Japanese",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "jp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Portuguese",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "pt.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Spanish",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "es.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Background",
+      "persistentUuid": "dd93951c-82dd-44da-9c34-f40a9d9d06f2",
+      "texture": "NewTiledSprite",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Gidi",
+      "persistentUuid": "4c017951-13e8-4b0d-8c5b-014f99214a5c",
+      "preScale": 7,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.5,
+            "blur": 2,
+            "distance": 1,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Normal",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Normal",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 2,
+                        "y": 13
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Happy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gidilab_faces4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 2,
+                        "y": 13
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Sentence",
+      "persistentUuid": "b3642920-1d8b-4989-9b65-61735967652e",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EasyTranslate",
+          "type": "EasyTranslate::EasyTranslate",
+          "Spanish": "Traducir videojuegos nunca fue tan sencillo",
+          "Portuguese": "Traduzir jogos nunca foi tão fácil",
+          "German": "Videospiele zu übersetzen war noch nie so einfach",
+          "French": "Traduire des jeux vidéo n’a jamais été aussi simple",
+          "Japanese": "ゲームの翻訳が、こんなに簡単になったことはありません。",
+          "Italian": "Tradurre videogiochi non è mai stato così semplice",
+          "English": "Translating games has never been this easy",
+          "Other": "Salve"
+        }
+      ],
+      "string": "Text",
+      "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 32,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 8,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "758a5ad5d3131fef02a270e9ab7ab030db457b06730add8a0b31581a76b93470_Silkscreen-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 32,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "556bd63e076ce4e96cbca3bb2a3eb31d5c6bcbba9b2a4066be7ccf67012dd533",
+      "name": "Pointer_Cursor",
+      "persistentUuid": "168c8e4f-7e03-4eb2-a259-0fbd9b76efa3",
+      "preScale": 5,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Pointer Cursor",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pointer Cursor",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 10,
+                        "y": 0
+                      },
+                      {
+                        "x": 10,
+                        "y": 11
+                      },
+                      {
+                        "x": 1,
+                        "y": 11
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Title"
+      },
+      {
+        "objectName": "Sentence"
+      },
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "Flags"
+      },
+      {
+        "objectName": "Pointer_Cursor"
+      },
+      {
+        "objectName": "Gidi"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Point tween"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::IsPlaying"
+              },
+              "parameters": [
+                "Pointer_Cursor",
+                "Tween",
+                "\"Y\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Pointer_Cursor",
+                "Tween",
+                "\"Y\"",
+                "Pointer_Cursor.Y()+15",
+                "\"linear\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Pointer_Cursor",
+                "Tween",
+                "\"Y\"",
+                "Pointer_Cursor.Y()-15",
+                "\"linear\"",
+                "0.5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Flags functionsf"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "Flags",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Pointer_Cursor",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Flag tween"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Tween",
+                    "\"popIn\"",
+                    "1.2",
+                    "\"linear\"",
+                    "0.1",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Tween",
+                    "\"popIn\"",
+                    "1",
+                    "\"linear\"",
+                    "0.1",
+                    "",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Change flag animation"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Index"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Animation",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Animation",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Change Gidi animation"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Gidi",
+                    "Animation",
+                    "=",
+                    "\"Happy\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Gidi",
+                    "Animation",
+                    "=",
+                    "\"Normal\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Background movement"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Background",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "Background",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Only code you need to change the language of your game ;D"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EasyTranslate::change_language"
+          },
+          "parameters": [
+            "",
+            "Flags.Animation::Name()",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
+      "name": "EasyTranslate",
+      "type": "EasyTranslate::EasyTranslate"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
