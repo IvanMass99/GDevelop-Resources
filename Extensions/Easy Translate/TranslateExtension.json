@@ -14,15 +14,15 @@
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "pixelsRounding": true,
+    "pixelsRounding": false,
     "projectUuid": "268ec47b-e36a-456b-8bf9-7efdd9fc1cc0",
-    "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "TranslateExtension",
     "description": "",
-    "author": "",
+    "author": "Ivan Dev",
     "windowWidth": 1280,
     "windowHeight": 720,
     "latestCompilationDirectory": "",
@@ -78,8 +78,12 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "ThTNbO5CH2PFLjew5p0BhyRJtv72"
+    ],
+    "authorUsernames": [
+      "Ivandeveloper"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -168,90 +172,10 @@
         "userAdded": false
       },
       {
-        "file": "gidilab_faces.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "gidilab_faces.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/gidilab_faces.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/gidilab_faces.png\"}",
-        "name": "gidilab_faces",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/gidilab_faces2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/gidilab_faces2.png\"}",
-        "name": "gidilab_faces2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/gidilab_faces3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "gidilab_faces3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/gidilab_faces4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "gidilab_faces4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/gidilab_faces5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "gidilab_faces5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Talk.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Talk.png\"}",
-        "name": "Talk",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Talk2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Talk2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Talk3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Talk3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Talk4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Talk4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Talk5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Talk5",
         "smoothed": false,
         "userAdded": false
       },
@@ -264,51 +188,37 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
-        "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Pointer Cursor.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pointer Cursor.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Mini FX, Items & UI/Mini UI/5cdbef6ec9b299badd701c9526ed82a17dcff8b3d63fae08802995a54c69d653_Pointer Cursor.png",
-          "name": "Pointer Cursor.png"
-        }
-      },
-      {
-        "file": "assets/Pointer Cursor_Drop Shadowed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pointer Cursor_Drop Shadowed.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Mini FX, Items & UI/Mini UI/5179ebc20a2475da8e1f40db3565d3f1df023518f25647f0cbd497730762d95b_Pointer Cursor_Drop Shadowed.png",
-          "name": "Pointer Cursor_Drop Shadowed.png"
-        }
-      },
-      {
         "file": "assets/Pointer Cursor2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Pointer Cursor",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "click.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "click.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default2",
+        "smoothed": true,
         "userAdded": false
       }
     ]
@@ -322,7 +232,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/escena-sin-ttulo"
+      "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
     }
   ],
   "externalEvents": [],
@@ -337,27 +251,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/newtext3"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/animatedbackandforthmovement"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/linearmovement"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/timedbackandforthmovement"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/curvedmovement"
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
     }
   ],
   "externalLayouts": []

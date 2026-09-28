@@ -1,15 +1,15 @@
 {
   "b": 255,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Escena_32sin_32t_237tulo",
-  "name": "Escena sin título",
+  "mangledName": "Game",
+  "name": "Game",
   "r": 247,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
   "v": 249,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -19,8 +19,8 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.7876290101673753,
+    "snap": false,
+    "zoomFactor": 0.4481978045410356,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -53,8 +53,8 @@
       "name": "Flags",
       "persistentUuid": "5baa7972-c5a1-4bf7-a2b4-a5fc49ccaa66",
       "width": 0,
-      "x": 32,
-      "y": 56,
+      "x": 100,
+      "y": 64,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -118,9 +118,25 @@
       "name": "Pointer_Cursor",
       "persistentUuid": "005be537-48ea-4f4b-b110-a26c9741eed4",
       "width": 0,
-      "x": 36,
-      "y": 100,
+      "x": 100,
+      "y": 128,
       "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "miTexto",
+      "persistentUuid": "3132c3ba-b96b-4030-b303-8148c33373c5",
+      "width": 0,
+      "x": 77,
+      "y": 473,
+      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -149,7 +165,7 @@
           "Japanese": "こんにちは",
           "Italian": "Ciao",
           "English": "Hello",
-          "Other": "Salve"
+          "Other": "dsadsadas"
         }
       ],
       "string": "Text",
@@ -735,6 +751,15 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "AutoTyping",
+          "type": "AutoTyping::AutoTyping",
+          "Text": "Text",
+          "Interval": 0.05,
+          "CharacterJustAdded": false,
+          "FullText": "",
+          "TypedText": ""
+        },
+        {
           "name": "EasyTranslate",
           "type": "EasyTranslate::EasyTranslate",
           "Spanish": "Traducir videojuegos nunca fue tan sencillo",
@@ -846,6 +871,63 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "miTexto",
+      "persistentUuid": "b028de6a-806f-4507-bea6-29ee0df2cf34",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EasyTranslate",
+          "type": "EasyTranslate::EasyTranslate",
+          "Spanish": "Mi nombre es ivan",
+          "Portuguese": "Olá",
+          "German": "Hallo",
+          "French": "Bonjour",
+          "Japanese": "こんにちは",
+          "Italian": "Ciao",
+          "English": "My name is Ivan",
+          "Other": "Hello"
+        }
+      ],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 128,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 12,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 128,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -868,11 +950,15 @@
       },
       {
         "objectName": "Gidi"
+      },
+      {
+        "objectName": "miTexto"
       }
     ]
   },
   "events": [
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [],
@@ -976,6 +1062,16 @@
               },
               "parameters": [
                 "Pointer_Cursor",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Sentence",
+                "AutoTyping",
                 ""
               ]
             }
@@ -1195,7 +1291,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Only code you need to change the language of your game ;D"
+      "comment": "Only code you need to change your game's language ;D\n"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1285,6 +1381,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "AutoTyping",
+      "type": "AutoTyping::AutoTyping"
     },
     {
       "name": "ButtonFSM",
