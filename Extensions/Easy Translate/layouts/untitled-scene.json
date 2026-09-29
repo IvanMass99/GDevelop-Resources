@@ -343,6 +343,17 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
+      "name": "NavMeshCharacter",
+      "type": "NavMeshPathfinding::NavMeshCharacterBehavior",
+      "cellSize": 10,
+      "cellDepth": 10,
+      "slopeMaxAngle": 50,
+      "stairHeightMax": 20,
+      "walkableRadius": -1,
+      "walkableDepth": 150,
+      "speedScaleY": 1
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
@@ -363,8 +374,20 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }

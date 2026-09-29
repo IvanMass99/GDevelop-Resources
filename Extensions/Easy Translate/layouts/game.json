@@ -598,148 +598,6 @@
     },
     {
       "assetStoreId": "",
-      "height": 32,
-      "name": "Background",
-      "persistentUuid": "dd93951c-82dd-44da-9c34-f40a9d9d06f2",
-      "texture": "NewTiledSprite",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Gidi",
-      "persistentUuid": "4c017951-13e8-4b0d-8c5b-014f99214a5c",
-      "preScale": 7,
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "DropShadow",
-          "name": "Effect",
-          "doubleParameters": {
-            "alpha": 0.5,
-            "blur": 2,
-            "distance": 1,
-            "padding": 0,
-            "quality": 3,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {
-            "shadowOnly": false
-          }
-        }
-      ],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Normal",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Normal",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 2,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 13
-                      },
-                      {
-                        "x": 2,
-                        "y": 13
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Happy",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "gidilab_faces4",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 2,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 13
-                      },
-                      {
-                        "x": 2,
-                        "y": 13
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "Sentence",
@@ -940,16 +798,10 @@
         "objectName": "Sentence"
       },
       {
-        "objectName": "Background"
-      },
-      {
         "objectName": "Flags"
       },
       {
         "objectName": "Pointer_Cursor"
-      },
-      {
-        "objectName": "Gidi"
       },
       {
         "objectName": "miTexto"
@@ -1403,6 +1255,17 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
+      "name": "NavMeshCharacter",
+      "type": "NavMeshPathfinding::NavMeshCharacterBehavior",
+      "cellSize": 10,
+      "cellDepth": 10,
+      "slopeMaxAngle": 50,
+      "stairHeightMax": 20,
+      "walkableRadius": -1,
+      "walkableDepth": 150,
+      "speedScaleY": 1
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
@@ -1419,8 +1282,16 @@
       "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }
