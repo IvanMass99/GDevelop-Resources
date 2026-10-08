@@ -98,7 +98,6 @@
       "name": "EasyTranslate",
       "objectType": "TextObject::Text",
       "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Text Editing/d115904b52a6cb4fdecf0f9741fb3756ba459112ab00070f839a118e9a724c2b_Text Editing_special_characters_translate.svg",
-      "private": true,
       "eventsFunctions": [
         {
           "fullName": "",

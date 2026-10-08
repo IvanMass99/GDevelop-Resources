@@ -26,7 +26,7 @@
   "dependencies": [],
   "globalVariables": [
     {
-      "name": "select_languaje",
+      "name": "languaje",
       "persistentUuid": "58f9ea67-fe30-4cb8-985d-1e08dc7ae1fd",
       "type": "string",
       "value": "English"
@@ -35,22 +35,28 @@
   "sceneVariables": [],
   "eventsFunctions": [
     {
-      "description": "Changes the game's language to the specified language. This action is executed once per trigger.\n",
       "fullName": "Change language",
       "functionType": "Action",
       "name": "change_language",
-      "sentence": "Change the language of the game to _PARAM1_",
+      "sentence": "_PARAM2_ Change languaje to _PARAM1_",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
           "actions": [
             {
               "type": {
                 "value": "SetStringVariable"
               },
               "parameters": [
-                "select_languaje",
+                "languaje",
                 "=",
                 "language_selected"
               ]
@@ -62,8 +68,14 @@
         {
           "description": "",
           "name": "language_selected",
-          "supplementaryInformation": "[\"English\",\"French\",\"German\",\"Italian\",\"Japanese\",\"Portuguese\",\"Spanish\",\"Other\"]",
+          "supplementaryInformation": "[\"English\",\"Español\",\"Italiano\"]",
           "type": "stringWithSelector"
+        },
+        {
+          "description": "Text object",
+          "name": "text_object",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectListOrEmptyIfJustDeclared"
         }
       ],
       "objectGroups": []
@@ -94,7 +106,6 @@
           "sentence": "",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -102,337 +113,50 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "select_languaje",
+                    "languaje",
+                    "=",
+                    "\"Español\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Text",
+                    "=",
+                    "Español"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "languaje",
                     "=",
                     "\"English\""
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "English"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "actions": [
                 {
                   "type": {
-                    "value": "StringVariable"
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "select_languaje",
+                    "Object",
+                    "Text",
                     "=",
-                    "\"French\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "French"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"German\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "German"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"Italian\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "Italian"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"Japanese\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "Japanese"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"Portuguese\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "Portuguese"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"Spanish\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "Spanish"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "select_languaje",
-                    "=",
-                    "\"Other\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Text",
-                        "=",
-                        "Other"
-                      ]
-                    }
+                    "English"
                   ]
                 }
               ]
@@ -468,92 +192,60 @@
           "value": "Hola",
           "type": "String",
           "label": "",
-          "group": "All languages",
-          "name": "Spanish"
-        },
-        {
-          "value": "Olá",
-          "type": "String",
-          "label": "",
-          "group": "All languages",
-          "name": "Portuguese"
-        },
-        {
-          "value": "Hallo",
-          "type": "String",
-          "label": "",
-          "group": "All languages",
-          "name": "German"
-        },
-        {
-          "value": "Bonjour",
-          "type": "String",
-          "label": "",
-          "group": "All languages",
-          "name": "French"
-        },
-        {
-          "value": "こんにちは",
-          "type": "String",
-          "label": "",
-          "group": "All languages",
-          "name": "Japanese"
-        },
-        {
-          "value": "Ciao",
-          "type": "String",
-          "label": "",
-          "group": "All languages",
-          "name": "Italian"
+          "group": "🗺 All languages",
+          "name": "Español"
         },
         {
           "value": "Hello",
           "type": "String",
           "label": "",
-          "description": "> You don't need to fill in or modify every language field. Only configure the languages you want to use.",
-          "group": "All languages",
+          "group": "🗺 All languages",
           "name": "English"
         },
         {
           "value": "Hello",
           "type": "String",
           "label": "",
-          "description": "> You can agree an extra language here",
-          "advanced": true,
-          "name": "Other"
+          "group": "🗺 All languages",
+          "name": "Portugues"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "Italiano"
+        },
+        {
+          "value": "Hello",
+          "type": "String",
+          "label": "",
+          "group": "🗺 All languages",
+          "name": "French"
         }
       ],
       "propertiesFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "folderName": "All languages",
+            "folderName": "🗺 All languages",
             "children": [
               {
-                "propertyName": "Spanish"
-              },
-              {
                 "propertyName": "English"
-              },
-              {
-                "propertyName": "Italian"
-              },
-              {
-                "propertyName": "Portuguese"
               },
               {
                 "propertyName": "French"
               },
               {
-                "propertyName": "German"
+                "propertyName": "Portugues"
               },
               {
-                "propertyName": "Japanese"
+                "propertyName": "Italiano"
+              },
+              {
+                "propertyName": "Español"
               }
             ]
-          },
-          {
-            "propertyName": "Other"
           }
         ]
       }
